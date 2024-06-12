@@ -6,9 +6,15 @@
     display: flex;
     gap: 30px;
     justify-content: space-between;
+    @media (max-width: 768px) {
+      flex-direction: column-reverse;
+    }
     .text {
       max-width: 600px;
       width: 100%;
+      @media (max-width: 768px) {
+        max-width: 100%;
+      }
       h3 {
         font-family: "Lora", serif;
         font-size: 45px;
@@ -17,6 +23,10 @@
         color: #ba936f;
         text-transform: uppercase;
         margin-bottom: 40px;
+        @media (max-width: 768px) {
+          font-size: 35px;
+          line-height: 40.6px;
+        }
       }
       .input {
         max-width: 500px;
@@ -83,6 +93,9 @@
     text-align: center;
     max-width: 862px;
     margin-inline: auto;
+    @media (max-width: 768px) {
+      padding-inline: 20px;
+    }
     p {
       position: relative;
       font-family: "Montserrat", sans-serif;

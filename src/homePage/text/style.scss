@@ -6,6 +6,10 @@
     margin-inline: auto;
     display: flex;
     gap: 60px;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 16px;
+    }
     .text {
       max-width: 576px;
       width: 100%;

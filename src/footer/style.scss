@@ -8,6 +8,13 @@ footer {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 30px;
+      @media (max-width: 768px) {
+        gap: 15px;
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @media (max-width: 512px) {
+        grid-template-columns: repeat(1, 1fr);
+      }
       .item {
         .social-icons {
           list-style-type: none;

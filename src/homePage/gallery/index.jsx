@@ -18,10 +18,8 @@ const HomeGallery = () => {
             growth.
           </p>
         </div>
-        <div>
-          <div className="gallery-img">
-            <img src={galleryImg} alt="gallery-img" />
-          </div>
+        <div className="gallery-img">
+          <img src={galleryImg} alt="gallery-img" />
         </div>
       </section>
     </>
