@@ -1,10 +1,55 @@
 import React from "react";
-import { heroArrow, heroCircle, heroLogo } from "../../assets/images/images";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectFade } from "swiper/modules";
+import "swiper/css/effect-fade";
+import {
+  heroArrow,
+  heroCircle,
+  heroImg,
+  heroImg2,
+  heroImg3,
+  heroImg4,
+  heroImg5,
+  heroImg6,
+  heroLogo,
+} from "../../assets/images/images";
 import "./style.scss";
+import "swiper/css";
+import { Autoplay } from "swiper/modules";
 
 const HomeHero = () => {
   return (
     <section className="home-hero">
+      <div className="hero-slider">
+        <Swiper
+          spaceBetween={0}
+          slidesPerView={1}
+          modules={[Autoplay]}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+          }}
+        >
+          <SwiperSlide>
+            <img src={heroImg} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={heroImg2} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={heroImg3} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={heroImg4} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={heroImg5} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={heroImg6} alt="" />
+          </SwiperSlide>
+        </Swiper>
+      </div>
       <div className="hero-content">
         <h1>
           Hello, <br /> I am Mahrukh Nice to meet you

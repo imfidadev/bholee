@@ -1,5 +1,10 @@
 import logo from "./logo.svg";
-import heroImg from "./heroImg.png";
+import heroImg from "./heroImg.jpg";
+import heroImg2 from "./heroImg2.jpg";
+import heroImg3 from "./heroImg3.jpg";
+import heroImg4 from "./heroImg4.jpg";
+import heroImg5 from "./heroImg5.jpg";
+import heroImg6 from "./heroImg6.jpg";
 import heroLogo from "./heroLogo.svg";
 import heroCircle from "./heroCircle.png";
 import heroArrow from "./heroArrow.png";
@@ -24,6 +29,11 @@ export {
   logo,
   bgLogo,
   heroImg,
+  heroImg2,
+  heroImg3,
+  heroImg4,
+  heroImg5,
+  heroImg6,
   heroLogo,
   heroCircle,
   heroArrow,

@@ -4,7 +4,7 @@ import { aboutImg } from "../../assets/images/images";
 
 const HomeAbout = () => {
   return (
-    <section className="home-about">
+    <section className="home-about" id="about">
       <div className="text-content">
         <h3>
           WHo is <br /> Mahrukh Ahmed?

@@ -1,6 +1,12 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import "./style.scss";
-import { facebook, instagram, telegram, twitter } from "../assets/images/images";
+import {
+  facebook,
+  instagram,
+  telegram,
+  twitter,
+} from "../assets/images/images";
 
 const Footer = () => {
   return (
@@ -12,22 +18,26 @@ const Footer = () => {
             <p>info@bholeeyoga.com</p>
             <ul className="social-icons">
               <li>
-                <a target="_blank" href="#!">
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/bholeeyoga?igsh=YW9oMDFsZnYyaXNp"
+                  rel="noreferrer"
+                >
                   <img src={instagram} alt="instagram" />
                 </a>
               </li>
               <li>
-                <a target="_blank" href="#!">
+                <a href="">
                   <img src={twitter} alt="twitter" />
                 </a>
               </li>
               <li>
-                <a target="_blank" href="#!">
+                <a href="">
                   <img src={telegram} alt="telegram" />
                 </a>
               </li>
               <li>
-                <a target="_blank" href="#!">
+                <a href="">
                   <img src={facebook} alt="facebook" />
                 </a>
               </li>

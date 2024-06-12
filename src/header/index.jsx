@@ -1,14 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.scss";
 import { NavLink } from "react-router-dom";
 import { logo } from "../assets/images/images";
 
 const Header = () => {
-  // const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-  // const toggleMenu = () => {
-  //   setIsOpen(!isOpen);
-  // };
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
   return (
     <header>
       <nav className="navbar">
@@ -17,26 +20,20 @@ const Header = () => {
             <img src={logo} alt="logo" />
           </NavLink>
         </div>
-        {/* <div className="menu-toggle" onClick={toggleMenu}>
+        <div className="menu-toggle" onClick={toggleMenu}>
           ☰
-        </div> */}
-        {/* <ul className={`nav-links ${isOpen ? "active" : ""}`}> */}
-        <ul>
+        </div>
+        <ul className={`nav-links ${isOpen ? "active" : ""}`}>
           <li>
-            {" "}
-            <NavLink>Home</NavLink>{" "}
+            <NavLink onClick={closeMenu}>Home</NavLink>
           </li>
           <li>
-            {" "}
-            <NavLink>Events</NavLink>{" "}
+            <NavLink onClick={closeMenu}>Events</NavLink> <span>New</span>
           </li>
           <li>
-            {" "}
-            <NavLink>New</NavLink>{" "}
-          </li>
-          <li>
-            {" "}
-            <NavLink>About</NavLink>{" "}
+            <a href="#about" onClick={closeMenu}>
+              About
+            </a>
           </li>
         </ul>
       </nav>
