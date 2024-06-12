@@ -1,0 +1,105 @@
+.contact-form {
+  max-width: 1300px;
+  margin-inline: auto;
+  .contact-content {
+    padding: 108px 20px;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    .text {
+      max-width: 600px;
+      width: 100%;
+      h3 {
+        font-family: "Lora", serif;
+        font-size: 45px;
+        font-weight: 400;
+        line-height: 57.6px;
+        color: #ba936f;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+      }
+      .input {
+        max-width: 500px;
+        width: 100%;
+        padding-bottom: 30px;
+        input {
+          background-color: transparent;
+          border: 0;
+          border-bottom: 1px solid #ba936f;
+          width: 100%;
+          outline: none;
+          padding-block: 5px;
+          color: #343434;
+          font-family: "Lora", serif;
+          font-size: 16px;
+          font-weight: 400;
+          &::placeholder {
+            color: #ba936f;
+            font-family: "Montserrat", sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19.5px;
+          }
+        }
+      }
+      .checkbox {
+        label {
+          padding-left: 12px;
+          font-family: "Montserrat", sans-serif;
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 18.29px;
+          color: #343434;
+        }
+      }
+      .send {
+        margin-top: 30px;
+        button {
+          background-color: #ba936f;
+          border: 0;
+          min-width: 180px;
+          text-align: center;
+          border-radius: 15px;
+          font-family: "Montserrat", sans-serif;
+          font-size: 17px;
+          font-weight: 500;
+          line-height: 20.72px;
+          color: #ffffff;
+          padding-block: 10px;
+          cursor: pointer;
+        }
+      }
+    }
+    .image {
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .gallery-text {
+    margin-bottom: 90px;
+    margin-top: 80px;
+    position: relative;
+    text-align: center;
+    max-width: 862px;
+    margin-inline: auto;
+    p {
+      position: relative;
+      font-family: "Montserrat", sans-serif;
+      font-size: 19px;
+      font-weight: 400;
+      line-height: 27px;
+    }
+    .bg-logo {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 245px;
+      z-index: 0;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
