@@ -18,6 +18,7 @@ import instagram from "./instagram.svg";
 import telegram from "./telegram.svg";
 import instagramImgs from "./instagramImgs.png";
 import formImage from "./formImage.svg";
+import stepper_img from "./stepper_img.png"
 
 export {
   formImage,
@@ -40,4 +41,5 @@ export {
   aboutImg,
   handImg,
   galleryImg,
+  stepper_img
 };

@@ -1,0 +1,65 @@
+.modal-open {
+  overflow: hidden;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  background-image: url("../../assets/images/heroImg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 150%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 5s ease, visibility 5s ease;
+}
+
+.modal-overlay.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-overlay.close {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 32px;
+  border-radius: 4px;
+  position: relative;
+  width: 80%;
+  height: calc(100% - 50px);
+  transform: translateY(-20px);
+  opacity: 0;
+  transition: transform 5s ease, opacity 5s ease;
+  overflow-y: auto;
+}
+
+.modal-content.open {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.modal-content.close {
+  transform: translateY(-20px);
+  opacity: 0;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
