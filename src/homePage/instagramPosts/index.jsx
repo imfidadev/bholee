@@ -1,8 +1,30 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./style.scss";
 import { instagramImgs } from "../../assets/images/images";
+import { getPosts } from "../../api/actions";
+import { toast } from "react-toastify";
+import { parseError } from "../../utils";
 
 const InstagramPosts = () => {
+  const [loading, setLoading] = useState(false);
+  const [posts, setPosts] = useState([]);
+
+  const getInstagramPosts = () => {
+    setLoading(true);
+    getPosts()
+      .then(() => {
+        setLoading(false);
+      })
+      .catch((error) => {
+        setLoading(false);
+        toast.error(parseError(error));
+      });
+  };
+
+  useEffect(() => {
+    getInstagramPosts();
+  }, []);
+
   return (
     <section className="instagram-posts">
       <h3>our Instagram</h3>
@@ -13,7 +35,16 @@ const InstagramPosts = () => {
       </p>
       <p className="tags">@bholeeyoga #bholee</p>
       <div className="gallery-grid">
-        <img src={instagramImgs} alt="images" />
+        {loading ? (
+          <div>Loading...</div>
+        ) : (
+          <>
+            {/* {posts.map((item, key) => (
+              <img key={key} src={item.image} alt="images" />
+            ))} */}
+            <img src={instagramImgs} alt="images" />
+          </>
+        )}
       </div>
     </section>
   );
