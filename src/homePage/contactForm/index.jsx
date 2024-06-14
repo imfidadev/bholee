@@ -1,8 +1,49 @@
-import React from "react";
+import React, { useState } from "react";
 import { bgLogo, formImage } from "../../assets/images/images";
 import "./style.scss";
+import { toast } from "react-toastify";
+import { parseError } from "../../utils";
+import { contactUs } from "../../api/actions";
 
 const ContactForm = () => {
+  const [loading, setLoading] = useState(false);
+  const [data, setData] = useState({
+    name: "",
+    phone: "",
+    accept: true,
+  });
+
+  const onChange = (label, value) => {
+    setData({
+      ...data,
+      [label]: value,
+    });
+  };
+
+  const resetFormDetails = () => {
+    setData({
+      ...data,
+      name: "",
+      phone: "",
+      accept: true,
+    });
+  };
+
+  const onSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+    contactUs({ name: data.name, phone: data.phone })
+      .then(() => {
+        setLoading(false);
+        toast.success("Sent Successfully");
+        resetFormDetails();
+      })
+      .catch((error) => {
+        setLoading(false);
+        toast.error(parseError(error));
+      });
+  };
+
   return (
     <section className="contact-form">
       <div className="contact-content">
@@ -11,20 +52,41 @@ const ContactForm = () => {
             Sign up <br />
             for regular updates on events and sessions
           </h3>
-          <form action="">
+          <form onSubmit={onSubmit}>
             <div className="input">
-              <input type="text" placeholder="Name" required />
+              <input
+                type="text"
+                placeholder="Name"
+                required
+                value={data.name}
+                onChange={(e) => onChange("name", e.currentTarget.value)}
+              />
             </div>
+
             <div className="input">
-              <input type="text" placeholder="Phone Number" required />
+              <input
+                type="text"
+                placeholder="Phone Number"
+                required
+                value={data.phone}
+                onChange={(e) => onChange("phone", e.currentTarget.value)}
+              />
             </div>
+
             <div className="checkbox">
-              <input type="checkbox" id="checkbox" />
+              <input
+                type="checkbox"
+                id="checkbox"
+                checked={data.accept}
+                onChange={(e) => onChange("accept", !data.accept)}
+              />
               <label htmlFor="checkbox">
                 I give my consent to the processing of personal data
               </label>
               <div className="send">
-                <button type="submit">Send</button>
+                <button type="submit" disabled={loading || !data.accept}>
+                  {loading ? "Sending..." : "Send"}
+                </button>
               </div>
             </div>
           </form>

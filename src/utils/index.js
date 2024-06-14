@@ -3,6 +3,6 @@ export const parseError = (error) => {
     error?.response?.data?.error?.[0] ||
     error?.message ||
     error?.meta?.message ||
-    DEFAULT_MSG.StandardErrorMsg
+    "Something went wrong"
   );
 };

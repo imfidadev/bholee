@@ -20,7 +20,7 @@ api.interceptors.response.use(
     if (response?.data?.meta?.code === 200) return response.data;
     if (response?.data?.meta?.code === 401) onUnAuthorized();
     return Promise.reject(
-      new Error(response?.data?.meta?.message || DEFAULT_MSG.StandardErrorMsg)
+      new Error(response?.data?.meta?.message || "Something went wrong")
     );
   },
   (error) => {
