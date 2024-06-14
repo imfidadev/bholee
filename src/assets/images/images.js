@@ -18,6 +18,13 @@ import instagram from "./instagram.svg";
 import telegram from "./telegram.svg";
 import instagramImgs from "./instagramImgs.png";
 import formImage from "./formImage.svg";
+import stepper_img from "./stepper_img.png"
+import visaLogo from "./visa-logo.svg"
+import DinersClub from "./DinersClub.svg"
+import Amex from "./Amex.svg"
+import Discover from "./Discover.svg"
+import JCB from "./JCB.svg"
+import UnionPay from "./UnionPay.svg"
 
 export {
   formImage,
@@ -40,4 +47,11 @@ export {
   aboutImg,
   handImg,
   galleryImg,
+  stepper_img,
+  visaLogo,
+  DinersClub,
+  Amex,
+  Discover,
+  JCB,
+  UnionPay
 };

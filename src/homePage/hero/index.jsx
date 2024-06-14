@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectFade } from "swiper/modules";
 import "swiper/css/effect-fade";
 import {
   heroArrow,
@@ -15,9 +14,17 @@ import {
 } from "../../assets/images/images";
 import "./style.scss";
 import "swiper/css";
+import PaymentModal from "../../components/paymentModal/paymentModal";
+import DetailsStep from "../../components/home/detailsStep";
 import { Autoplay } from "swiper/modules";
+import SelectPayment from "../../components/home/selectPaymentStep";
+import PaymentFormSteps from "../../components/home/paymentFormsteps";
 
 const HomeHero = () => {
+  const [isModalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => setModalOpen(true);
+  const closeModal = () => setModalOpen(false);
   return (
     <section className="home-hero">
       <div className="hero-slider">
@@ -58,13 +65,14 @@ const HomeHero = () => {
           <div className="hero-circle">
             <img src={heroCircle} alt="hero-circle" />
           </div>
-          <span>More about Bholee</span>
+          <span onClick={openModal}>More about Bholee</span>
           <img src={heroArrow} alt="hero-arrow" />
         </div>
       </div>
       <div className="hero-logo">
         <img src={heroLogo} alt="hero-logo" />
       </div>
+      <PaymentModal isOpen={isModalOpen} onClose={closeModal} />
     </section>
   );
 };
