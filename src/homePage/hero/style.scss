@@ -127,14 +127,18 @@
       font-weight: 400;
       font-family: "Lora", serif;
       font-size: 35px;
-      max-width: 500px;
+      max-width: 400px;
+      margin-bottom: 16px;
+      text-transform: uppercase;
     }
     h3 {
+      text-transform: uppercase;
       color: #ba936f;
       font-size: 24px;
       font-weight: 700;
       font-family: "Lora", serif;
       margin-bottom: 16px;
+      max-width: 366px;
     }
     p {
       font-family: "Plus Jakarta Sans", sans-serif;
@@ -142,9 +146,6 @@
       font-weight: 400;
       line-height: 27px;
       margin-bottom: 10px;
-      &:last-child {
-        margin-bottom: 30px;
-      }
     }
     span {
       display: block;
@@ -153,6 +154,9 @@
       font-weight: 600;
       color: #ba936f;
       margin-bottom: 5px;
+      &.marginTop {
+        margin-top: 50px;
+      }
     }
     button {
       all: unset;
@@ -177,7 +181,7 @@
     font-weight: 400;
     line-height: 44.8px;
     text-align: left;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     color: #ba936f;
   }
   p {
@@ -187,7 +191,7 @@
     line-height: 21.42px;
     text-align: left;
     color: #343434;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
   }
   .payment-card-wrapper {
     display: flex;
@@ -203,6 +207,11 @@
   padding-block: 30px;
   padding-block-start: 40px;
   text-align: center;
+  min-height: 440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   &.confirm-payment {
     max-width: 280px;
   }
@@ -251,7 +260,7 @@
     font-weight: 400;
     text-align: left;
     color: #ba936f;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
   .form-step-wrapper {
     display: flex;
@@ -267,10 +276,13 @@
         ul {
           list-style: none;
           li {
+            margin-bottom: 40px;
             &.active {
               span {
                 background-color: #ba936f;
               }
+              font-weight: 700;
+              color: #ba936f;
             }
             span {
               display: inline-flex;
@@ -285,7 +297,6 @@
               color: #fff;
               background-color: #d9d9d9;
               margin-right: 20px;
-              margin-bottom: 20px;
             }
             font-family: "Plus Jakarta Sans", sans-serif;
             font-size: 16px;
@@ -303,6 +314,9 @@
         color: #000000;
         margin-bottom: 10px;
         display: inline-block;
+        &.marginTop{
+          margin-top: 20px;
+        }
       }
       input {
         width: 100%;

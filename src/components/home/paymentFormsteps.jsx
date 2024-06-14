@@ -63,7 +63,7 @@ const PaymentFormSteps = () => {
                 <input type="text" placeholder="Company (optional)" />
                 <input type="text" placeholder="Phone No." />
               </div>
-              <label htmlFor="address">Enter your address</label>
+              <label className="marginTop" htmlFor="address">Enter your address</label>
               <input type="text" placeholder="Address" />
               <div className="form-group-wrapper">
                 <input type="text" placeholder="City" />

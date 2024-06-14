@@ -20,7 +20,7 @@ const DetailsStep = ({ goToNextStep }) => {
           beautiful oceanfront Mark Twain Residence at the OBX 4x4 Beaches with
           Wild Horses roaming around.
         </p>
-        <span>3 nights/ 2 days</span>
+        <span className="marginTop">3 nights/ 2 days</span>
         <span>Start Date: September 16, 2023</span>
         <span>End Date: September 19, 2023</span>
         <button onClick={goToNextStep}>Book your slot</button>
