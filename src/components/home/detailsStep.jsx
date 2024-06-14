@@ -1,7 +1,7 @@
 import React from "react";
 import { stepper_img } from "../../assets/images/images";
 
-const DetailsStep = () => {
+const DetailsStep = ({ goToNextStep }) => {
   return (
     <div className="step-one-wrapper">
       <div className="col">
@@ -23,7 +23,7 @@ const DetailsStep = () => {
         <span>3 nights/ 2 days</span>
         <span>Start Date: September 16, 2023</span>
         <span>End Date: September 19, 2023</span>
-        <button>Book your slot</button>
+        <button onClick={goToNextStep}>Book your slot</button>
       </div>
     </div>
   );

@@ -72,11 +72,7 @@ const HomeHero = () => {
       <div className="hero-logo">
         <img src={heroLogo} alt="hero-logo" />
       </div>
-      <PaymentModal isOpen={isModalOpen} onClose={closeModal}>
-        <DetailsStep />
-        <SelectPayment />
-        <PaymentFormSteps/>
-      </PaymentModal>
+      <PaymentModal isOpen={isModalOpen} onClose={closeModal} />
     </section>
   );
 };

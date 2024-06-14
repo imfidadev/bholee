@@ -193,51 +193,55 @@
     display: flex;
     justify-content: space-between;
     gap: 10px;
-    .payment-card {
-      flex-basis: calc(25% - 2.5px);
-      background: rgba(253, 239, 230, 0.99);
-      border-radius: 16px;
-      padding-inline: 15px;
-      padding-block: 30px;
-      padding-block-start: 40px;
-      text-align: center;
-      h3 {
-        font-family: "Lora", serif;
-        font-size: 25px;
-        font-weight: 600;
-        color: #ba936f;
-        margin-bottom: 16px;
-      }
-      h4 {
-        font-family: "Plus Jakarta Sans", sans-serif;
-        font-size: 48px;
-        font-weight: 800;
-        margin-bottom: 16px;
-        color: #ba936f;
-      }
-      h5 {
-        font-family: "Montserrat", sans-serif;
-        font-size: 17px;
-        font-weight: 400;
-        text-align: center;
-        color: #888888;
-        margin-bottom: 16px;
-        min-height: 65px;
-      }
-      button {
-        all: unset;
-        width: 200px;
-        height: 46px;
-        background-color: #ba936f;
-        border-radius: 15px;
-        font-weight: 500;
-        font-size: 16px;
-        color: #fff;
-        font-family: "Montserrat", sans-serif;
-        text-align: center;
-        margin-top: 10px;
-      }
-    }
+  }
+}
+.payment-card {
+  flex-basis: calc(25% - 2.5px);
+  background: rgba(253, 239, 230, 0.99);
+  border-radius: 16px;
+  padding-inline: 15px;
+  padding-block: 30px;
+  padding-block-start: 40px;
+  text-align: center;
+  &.confirm-payment {
+    max-width: 280px;
+  }
+  h3 {
+    font-family: "Lora", serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: #ba936f;
+    margin-bottom: 16px;
+  }
+  h4 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 16px;
+    color: #ba936f;
+  }
+  h5 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+    color: #888888;
+    margin-bottom: 16px;
+    min-height: 65px;
+  }
+  button {
+    all: unset;
+    width: 200px;
+    height: 46px;
+    background-color: #ba936f;
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
   }
 }
 .form-step {
@@ -263,6 +267,11 @@
         ul {
           list-style: none;
           li {
+            &.active {
+              span {
+                background-color: #ba936f;
+              }
+            }
             span {
               display: inline-flex;
               justify-content: center;
@@ -344,6 +353,12 @@
         justify-content: space-between;
         gap: 10px;
         flex-wrap: wrap;
+        &.wrapper-col-3 {
+          input {
+            flex-basis: calc(33.33% - 10px);
+            margin: 0;
+          }
+        }
         input {
           flex-basis: calc(50% - 5px);
           margin: 0;
