@@ -18,15 +18,19 @@ import instagram from "./instagram.svg";
 import telegram from "./telegram.svg";
 import instagramImgs from "./instagramImgs.png";
 import formImage from "./formImage.svg";
-import stepper_img from "./stepper_img.png"
-import visaLogo from "./visa-logo.svg"
-import DinersClub from "./DinersClub.svg"
-import Amex from "./Amex.svg"
-import Discover from "./Discover.svg"
-import JCB from "./JCB.svg"
-import UnionPay from "./UnionPay.svg"
+import stepper_img from "./stepper_img.png";
+import visaLogo from "./visa-logo.svg";
+import DinersClub from "./DinersClub.svg";
+import Amex from "./Amex.svg";
+import Discover from "./Discover.svg";
+import JCB from "./JCB.svg";
+import UnionPay from "./UnionPay.svg";
+import retreatCardImg1 from "./retreatCardImg1.svg";
+import retreatCardImg2 from "./retreatCardImg2.svg";
 
 export {
+  retreatCardImg1,
+  retreatCardImg2,
   formImage,
   instagramImgs,
   facebook,
@@ -53,5 +57,5 @@ export {
   Amex,
   Discover,
   JCB,
-  UnionPay
+  UnionPay,
 };

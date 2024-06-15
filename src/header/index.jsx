@@ -25,10 +25,13 @@ const Header = () => {
         </div>
         <ul className={`nav-links ${isOpen ? "active" : ""}`}>
           <li>
-            <NavLink onClick={closeMenu}>Home</NavLink>
+            <NavLink to="/" onClick={closeMenu}>Home</NavLink>
           </li>
           <li>
-            <NavLink onClick={closeMenu}>Events</NavLink> <span>New</span>
+            <NavLink to="/events" onClick={closeMenu}>
+              Events
+            </NavLink>{" "}
+            <span>New</span>
           </li>
           <li>
             <a href="#about" onClick={closeMenu}>

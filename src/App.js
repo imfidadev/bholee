@@ -2,6 +2,8 @@ import { ToastContainer } from "react-toastify";
 import Footer from "./footer";
 import Header from "./header";
 import HomePage from "./homePage";
+import { Route, Routes } from "react-router-dom";
+import EventPage from "./eventPage";
 
 function App() {
   return (
@@ -18,7 +20,10 @@ function App() {
       />
 
       <Header />
-      <HomePage />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/events" element={<EventPage />} />
+      </Routes>
       <Footer />
     </>
   );
