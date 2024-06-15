@@ -1,0 +1,166 @@
+.retreat-card {
+  margin-top: 40px;
+  background-color: #fdefe6;
+  padding: 16px;
+  border-radius: 20px;
+  flex-basis: calc(50% - 24px);
+  @media (max-width: 768px) {
+    flex-basis: 100%;
+  }
+  .card-img {
+    border-radius: 12px;
+    margin-bottom: 10px;
+    width: 100%;
+    img {
+      width: 100%;
+      border-radius: inherit;
+    }
+  }
+  .card-content {
+    h2 {
+      color: #7c5531;
+      font-family: "Lora", serif;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 30px;
+      margin-bottom: 14px;
+    }
+    .card-desc {
+      color: #454545;
+      font-family: "Montserrat", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      margin-bottom: 14px;
+      min-height: 50px;
+    }
+    .retreat-accordion {
+      height: 0px;
+      overflow: hidden;
+      transition: 0.3s linear;
+      &.show {
+        height: 100%;
+      }
+      .accordion {
+        border: 0;
+        .accordion__button {
+          background-color: transparent;
+          position: relative;
+          font-size: 16px;
+          color: #333;
+          font-family: "Montserrat", "sans", serif;
+          line-height: 25px;
+          padding-inline: 0;
+          font-weight: 500;
+          padding-right: 40px;
+          &::before {
+            position: absolute;
+            right: 0;
+            color: #7c5531;
+          }
+        }
+        .accordion__panel {
+          padding: 0;
+          .accordion-body {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 10px;
+            .selection {
+              min-width: 250px;
+              @media (max-width: 768px) {
+                min-width: 190px;
+              }
+              .custom-radio {
+                display: none;
+              }
+              label {
+                position: relative;
+                padding-left: 30px;
+                // margin-right: 20px;
+                cursor: pointer;
+                font-size: 16px;
+                color: #333;
+                font-family: "Montserrat", "sans", serif;
+                font-weight: 500;
+              }
+              label::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 14px;
+                height: 14px;
+                border: 2px solid #7c5531;
+                border-radius: 50%;
+                background-color: #e4e4e4;
+              }
+              input[type="radio"]:checked + label::after {
+                content: "";
+                position: absolute;
+                left: 5px;
+                top: 4.5px;
+                min-width: 8px;
+                min-height: 8px;
+                border-radius: 50%;
+                background: #7c5531;
+              }
+            }
+            .price {
+              color: #7c5531;
+              font-family: "Lora", serif;
+              font-size: 20px;
+              font-weight: 500;
+            }
+          }
+          .description {
+            padding-left: 30px;
+            font-size: 16px;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 700;
+            margin-top: 14px;
+          }
+        }
+      }
+    }
+    .check-in-out {
+      p {
+        font-family: "Montserrat", sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: left;
+        color: #454545;
+        margin-bottom: 5px;
+      }
+    }
+    .card-bottom {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-top: 15px;
+      button {
+        background-color: #ba936f;
+        border: 0;
+        min-width: 173px;
+        text-align: center;
+        border-radius: 8px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 20.72px;
+        color: #ffffff;
+        padding-block: 10px;
+        cursor: pointer;
+      }
+      span {
+        font-family: "Montserrat", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #454545;
+        cursor: pointer;
+      }
+    }
+  }
+}
