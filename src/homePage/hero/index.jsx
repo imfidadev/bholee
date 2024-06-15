@@ -65,14 +65,14 @@ const HomeHero = () => {
           <div className="hero-circle">
             <img src={heroCircle} alt="hero-circle" />
           </div>
-          <span onClick={openModal}>More about Bholee</span>
+          <span>More about Bholee</span>
           <img src={heroArrow} alt="hero-arrow" />
         </div>
       </div>
       <div className="hero-logo">
         <img src={heroLogo} alt="hero-logo" />
       </div>
-      <PaymentModal isOpen={isModalOpen} onClose={closeModal} />
+      
     </section>
   );
 };

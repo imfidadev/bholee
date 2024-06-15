@@ -1,11 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import "./style.scss";
-import DetailsStep from "../home/detailsStep";
-import SelectPayment from "../home/selectPaymentStep";
 import PaymentFormSteps from "../home/paymentFormsteps";
 
 const PaymentModal = ({ isOpen, onClose }) => {
-  const [currentStep, setCurrentStep] = useState(1);
   useEffect(() => {
     if (isOpen) {
       document.body.classList.add("modal-open");
@@ -17,10 +14,6 @@ const PaymentModal = ({ isOpen, onClose }) => {
     };
   }, [isOpen]);
   if (!isOpen) return null;
-
-  const goToNextStep = () => {
-    setCurrentStep(currentStep + 1);
-  };
 
   return (
     <div
@@ -34,9 +27,7 @@ const PaymentModal = ({ isOpen, onClose }) => {
         <button className="modal-close" onClick={onClose}>
           &times;
         </button>
-        {currentStep === 1 && <DetailsStep goToNextStep={goToNextStep} />}
-        {currentStep === 2 && <SelectPayment goToNextStep={goToNextStep} />}
-        {currentStep === 3 && <PaymentFormSteps />}
+        <PaymentFormSteps />
       </div>
     </div>
   );

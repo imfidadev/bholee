@@ -3,7 +3,7 @@ import { retreatCardInfo } from "./helper";
 import "./style.scss";
 import CardAccordion from "./Accordion";
 
-const CardElement = ({ item, index }) => {
+const CardElement = ({ item, index, openModal }) => {
   const [isShowMoreFirstCard, setIsShowMoreFirstCard] = useState(false);
   return (
     <div className="retreat-card" key={index}>
@@ -25,7 +25,7 @@ const CardElement = ({ item, index }) => {
           <p>Check-out: {item.checkOut}</p>
         </div>
         <div className="card-bottom">
-          <button>Book Your Slot</button>
+          <button onClick={openModal}>Book Your Slot</button>
           <span
             onClick={() => {
               setIsShowMoreFirstCard(!isShowMoreFirstCard);
@@ -37,11 +37,11 @@ const CardElement = ({ item, index }) => {
   );
 };
 
-const RetreatCard = () => {
+const RetreatCard = ({ openModal }) => {
   return (
     <>
       {retreatCardInfo.map((item, index) => (
-        <CardElement item={item} index={index} />
+        <CardElement item={item} index={index} openModal={openModal} />
       ))}
     </>
   );

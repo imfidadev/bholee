@@ -18,10 +18,7 @@ import PaymentModal from "../../components/paymentModal/paymentModal";
 import { Autoplay } from "swiper/modules";
 
 const EventHero = () => {
-  const [isModalOpen, setModalOpen] = useState(false);
-
-  const openModal = () => setModalOpen(true);
-  const closeModal = () => setModalOpen(false);
+  
   return (
     <section className="home-hero">
       <div className="hero-slider">
@@ -66,7 +63,6 @@ const EventHero = () => {
       <div className="hero-logo">
         <img src={heroLogo} alt="hero-logo" />
       </div>
-      <PaymentModal isOpen={isModalOpen} onClose={closeModal} />
     </section>
   );
 };

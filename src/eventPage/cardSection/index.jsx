@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { bgLogo } from "../../assets/images/images";
 import RetreatCard from "../../components/retreatCard";
 import "./style.scss";
+import PaymentModal from "../../components/paymentModal/paymentModal";
 
 const CardSection = () => {
+  const [isModalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => setModalOpen(true);
+  const closeModal = () => setModalOpen(false);
   return (
     <section className="card-section">
       <div className="gallery-text">
@@ -27,8 +32,9 @@ const CardSection = () => {
         </p>
       </div>
       <div className="cards">
-        <RetreatCard />
+        <RetreatCard openModal={openModal}/>
       </div>
+      <PaymentModal isOpen={isModalOpen} onClose={closeModal} />
     </section>
   );
 };
