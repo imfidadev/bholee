@@ -9,7 +9,8 @@ const ContactForm = () => {
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState({
     name: "",
-    phone: "",
+    email: "",
+    message: "",
     accept: true,
   });
 
@@ -24,7 +25,8 @@ const ContactForm = () => {
     setData({
       ...data,
       name: "",
-      phone: "",
+      email: "",
+      message: "",
       accept: true,
     });
   };
@@ -32,7 +34,7 @@ const ContactForm = () => {
   const onSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
-    contactUs({ name: data.name, phone: data.phone })
+    contactUs({ name: data.name, email: data.email, message: data.message })
       .then(() => {
         setLoading(false);
         toast.success("Sent Successfully");
@@ -65,11 +67,19 @@ const ContactForm = () => {
 
             <div className="input">
               <input
-                type="text"
-                placeholder="Phone Number"
+                type="email"
+                placeholder="Email"
                 required
-                value={data.phone}
-                onChange={(e) => onChange("phone", e.currentTarget.value)}
+                value={data.email}
+                onChange={(e) => onChange("email", e.currentTarget.value)}
+              />
+            </div>
+
+            <div className="input">
+              <textarea
+                placeholder="Message"
+                value={data.message}
+                onChange={(e) => onChange("message", e.currentTarget.value)}
               />
             </div>
 
