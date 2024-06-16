@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/effect-fade";
 import {
@@ -11,20 +11,14 @@ import {
   heroImg5,
   heroImg6,
   heroLogo,
+  homeHero2,
+  homeHero3,
+  homeHero4,
 } from "../../assets/images/images";
 import "./style.scss";
 import "swiper/css";
-import PaymentModal from "../../components/paymentModal/paymentModal";
-import DetailsStep from "../../components/home/detailsStep";
 import { Autoplay } from "swiper/modules";
-import SelectPayment from "../../components/home/selectPaymentStep";
-import PaymentFormSteps from "../../components/home/paymentFormsteps";
-
 const HomeHero = () => {
-  const [isModalOpen, setModalOpen] = useState(false);
-
-  const openModal = () => setModalOpen(true);
-  const closeModal = () => setModalOpen(false);
   return (
     <section className="home-hero">
       <div className="hero-slider">
@@ -41,19 +35,13 @@ const HomeHero = () => {
             <img src={heroImg} alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={heroImg2} alt="" />
+            <img src={homeHero4} alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={heroImg3} alt="" />
+            <img src={homeHero3} alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={heroImg4} alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={heroImg5} alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={heroImg6} alt="" />
+            <img src={homeHero2} alt="" />
           </SwiperSlide>
         </Swiper>
       </div>
@@ -72,7 +60,6 @@ const HomeHero = () => {
       <div className="hero-logo">
         <img src={heroLogo} alt="hero-logo" />
       </div>
-      
     </section>
   );
 };

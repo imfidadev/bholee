@@ -4,10 +4,9 @@ import "./style.scss";
 import CardAccordion from "./Accordion";
 
 const CardElement = ({ item, index, handleSelected }) => {
-
   const [isShowMoreFirstCard, setIsShowMoreFirstCard] = useState(false);
   return (
-    <div className="retreat-card" key={index}>
+    <div className="retreat-card" key={index} id="retreatCard">
       <div className="card-img">
         <img src={item.cardImg} alt="card-img" />
       </div>
@@ -19,7 +18,7 @@ const CardElement = ({ item, index, handleSelected }) => {
         <div
           className={`retreat-accordion ${isShowMoreFirstCard ? "show" : ""}`}
         >
-          <CardAccordion/>
+          <CardAccordion />
         </div>
         <div className="check-in-out">
           <p>Check-in: {item.checkIn}</p>

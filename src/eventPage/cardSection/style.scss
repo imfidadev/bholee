@@ -8,8 +8,11 @@
     margin-top: 80px;
     position: relative;
     text-align: center;
-    max-width: 862px;
+    max-width: 1012px;
     margin-inline: auto;
+    &.marginTop{
+      margin-top: 150px;
+    }
     @media (max-width: 768px) {
       padding-inline: 20px;
     }
@@ -34,6 +37,18 @@
       }
     }
   }
+  .dark-color {
+    color: #7c5531;
+    font-family: "Montserrat", sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 27px;
+    max-width: 686px;
+    width: 100%;
+    text-align: center;
+    margin-inline: auto;
+    padding-inline: 20px;
+  }
   .cards {
     display: flex;
     gap: 24px;
@@ -41,6 +56,7 @@
     align-items: baseline;
     @media (max-width: 768px) {
       flex-direction: column;
+      gap: 24px;
     }
   }
 }

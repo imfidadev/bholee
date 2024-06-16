@@ -1,11 +1,11 @@
 .retreat-card {
-  margin-top: 40px;
+  // margin-top: 40px;
   background-color: #fdefe6;
   padding: 16px;
   border-radius: 20px;
   flex-basis: calc(50% - 24px);
   @media (max-width: 768px) {
-    flex-basis: 100%;
+    width: 100%;
   }
   .card-img {
     border-radius: 12px;
@@ -119,6 +119,8 @@
             font-family: "Montserrat", sans-serif;
             font-weight: 700;
             margin-top: 14px;
+            padding-bottom: 20px;
+            color: #555555;
           }
         }
       }

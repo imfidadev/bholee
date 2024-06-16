@@ -13,9 +13,9 @@ const HomePage = () => {
     <>
       <HomeHero />
       <HomeAbout />
-      <div className="hand-img">
+      <section className="hand-img">
         <img src={handImg} alt="hand-img" />
-      </div>
+      </section>
       <HomeGallery />
       <TextSection />
       <ContactForm />
