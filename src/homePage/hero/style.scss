@@ -50,7 +50,6 @@
       padding-bottom: 80px;
     }
     h1 {
-      max-width: 442px;
       width: 100%;
       font-family: "Lora", serif;
       font-size: 50px;
@@ -62,6 +61,9 @@
         max-width: 75%;
         font-size: 35px;
         line-height: 44px;
+      }
+      &.main-hero-title {
+        max-width: 442px;
       }
     }
     .anchor-link {
@@ -314,7 +316,7 @@
         color: #000000;
         margin-bottom: 10px;
         display: inline-block;
-        &.marginTop{
+        &.marginTop {
           margin-top: 20px;
         }
       }

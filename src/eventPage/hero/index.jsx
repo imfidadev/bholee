@@ -1,9 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/effect-fade";
 import {
-  heroArrow,
-  heroCircle,
   heroImg,
   heroImg2,
   heroImg3,
@@ -14,11 +12,9 @@ import {
 } from "../../assets/images/images";
 import "./style.scss";
 import "swiper/css";
-import PaymentModal from "../../components/paymentModal/paymentModal";
 import { Autoplay } from "swiper/modules";
 
 const EventHero = () => {
-  
   return (
     <section className="home-hero">
       <div className="hero-slider">
