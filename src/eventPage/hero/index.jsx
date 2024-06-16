@@ -1,6 +1,5 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css/effect-fade";
 import {
   heroImg,
   heroImg2,
@@ -10,9 +9,10 @@ import {
   heroImg6,
   heroLogo,
 } from "../../assets/images/images";
+import { Autoplay, EffectFade } from "swiper/modules";
 import "./style.scss";
 import "swiper/css";
-import { Autoplay } from "swiper/modules";
+import "swiper/css/effect-fade";
 
 const EventHero = () => {
   return (
@@ -21,7 +21,9 @@ const EventHero = () => {
         <Swiper
           spaceBetween={0}
           slidesPerView={1}
-          modules={[Autoplay]}
+          effect={"fade"}
+          modules={[Autoplay, EffectFade]}
+          speed={500}
           autoplay={{
             delay: 3000,
             disableOnInteraction: false,
