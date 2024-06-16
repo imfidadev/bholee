@@ -1,6 +1,10 @@
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { aboutImg, aboutImg2, aboutImg3 } from "../../assets/images/images";
+import { Autoplay, EffectFade } from "swiper/modules";
 import "./style.scss";
-import { aboutImg } from "../../assets/images/images";
+import "swiper/css";
+import "swiper/css/effect-fade";
 
 const HomeAbout = () => {
   return (
@@ -26,7 +30,29 @@ const HomeAbout = () => {
         </p>
       </div>
       <div className="img-content">
-        <img src={aboutImg} alt="about-img" />
+        <Swiper
+          spaceBetween={0}
+          slidesPerView={1}
+          effect={"fade"}
+          modules={[Autoplay, EffectFade]}
+          speed={1000}
+          loop={true}
+          // autoplay={{
+          //   delay: 3000,
+          //   disableOnInteraction: false,
+          // }}
+          autoplay={false}
+        >
+          <SwiperSlide>
+            <img src={aboutImg} alt="about-img" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={aboutImg2} alt="about-img" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={aboutImg3} alt="about-img" />
+          </SwiperSlide>
+        </Swiper>
       </div>
     </section>
   );

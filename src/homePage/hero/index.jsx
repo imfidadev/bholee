@@ -1,23 +1,18 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css/effect-fade";
 import {
   heroArrow,
   heroCircle,
   heroImg,
-  heroImg2,
-  heroImg3,
-  heroImg4,
-  heroImg5,
-  heroImg6,
   heroLogo,
   homeHero2,
   homeHero3,
   homeHero4,
 } from "../../assets/images/images";
+import { Autoplay, EffectFade } from "swiper/modules";
 import "./style.scss";
 import "swiper/css";
-import { Autoplay } from "swiper/modules";
+import "swiper/css/effect-fade";
 const HomeHero = () => {
   return (
     <section className="home-hero">
@@ -25,7 +20,9 @@ const HomeHero = () => {
         <Swiper
           spaceBetween={0}
           slidesPerView={1}
-          modules={[Autoplay]}
+          effect={"fade"}
+          modules={[Autoplay, EffectFade]}
+          speed={500}
           autoplay={{
             delay: 3000,
             disableOnInteraction: false,

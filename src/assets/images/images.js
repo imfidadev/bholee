@@ -12,6 +12,8 @@ import heroLogo from "./heroLogo.svg";
 import heroCircle from "./heroCircle.png";
 import heroArrow from "./heroArrow.png";
 import aboutImg from "./aboutImg.jpg";
+import aboutImg2 from "./aboutImg2.jpg";
+import aboutImg3 from "./aboutImg3.jpg";
 import handImg from "./hand-img.jpg";
 import galleryImg from "./galleryImg.png";
 import bgLogo from "./bgLogo.svg";
@@ -36,6 +38,8 @@ import youtubeThumb from "./youtube-thumb.jpg";
 import eventCardImg from "./eventCardImg.jpg";
 
 export {
+  aboutImg2,
+  aboutImg3,
   eventCardImg,
   youtubeThumb,
   retreatImg1,

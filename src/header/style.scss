@@ -10,6 +10,9 @@ header {
   position: fixed;
   width: 100%;
   z-index: 99;
+  @media (max-width: 768px) {
+    background: #ba936f;
+  }
   nav {
     max-width: 1200px;
     width: 100%;
