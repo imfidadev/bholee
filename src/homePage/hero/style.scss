@@ -210,7 +210,7 @@
   justify-content: space-around;
   align-items: center;
   &.confirm-payment {
-    max-width: 280px;
+    // max-width: 280px;
   }
   h3 {
     font-family: "Lora", serif;
@@ -261,11 +261,11 @@
   }
   .form-step-wrapper {
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
+    // justify-content: space-between;
+    gap: 40px;
     .col {
-      flex-basis: calc(50% - 10px);
       &.left-col {
+        min-width: 275px;
         border-right: 1px solid #888888;
         display: flex;
         flex-direction: column;
@@ -301,6 +301,9 @@
             color: #888888;
           }
         }
+      }
+      &.right-col {
+        min-width: 475px;
       }
     }
     .form-group {
@@ -346,10 +349,11 @@
       }
       button {
         all: unset;
-        width: 84px;
-        height: 45px;
+        width: 100%;
+        // min-width: 300px;
+        min-height: 45px;
         background-color: #ba936f;
-        border-radius: 15px;
+        border-radius: 10px;
         font-weight: 500;
         font-size: 16px;
         color: #fff;
@@ -358,6 +362,8 @@
         margin-top: 10px;
         box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
         cursor: pointer;
+        margin-top: 25px;
+        margin-inline: auto;
       }
       .form-group-wrapper {
         display: flex;

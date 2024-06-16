@@ -9,6 +9,7 @@ const PaymentFormSteps = ({ isOpen, selected }) => {
   const [currentStep, setCurrentStep] = useState(1);
 
   const [data, setData] = useState({
+    referralCode: "",
     email: "",
     firstName: "",
     lastName: "",
@@ -29,6 +30,7 @@ const PaymentFormSteps = ({ isOpen, selected }) => {
   const resetFormDetails = () => {
     setData({
       ...data,
+      referralCode: "",
       email: "",
       firstName: "",
       lastName: "",
@@ -75,40 +77,59 @@ const PaymentFormSteps = ({ isOpen, selected }) => {
           <ul>
             <li className={currentStep === 1 ? "active" : ""}>
               <span>1</span>
-              Review Plan
+              Referral Code
             </li>
             <li className={currentStep === 2 ? "active" : ""}>
               <span>2</span>
-              Your Email
+              Review Plan
             </li>
             <li className={currentStep === 3 ? "active" : ""}>
               <span>3</span>
-              Your Billing Address
+              Your Email
             </li>
             <li className={currentStep === 4 ? "active" : ""}>
               <span>4</span>
+              Your Billing Address
+            </li>
+            <li className={currentStep === 5 ? "active" : ""}>
+              <span>5</span>
               Payment
             </li>
           </ul>
         </div>
 
-        <div className="col">
+        <div className="col right-col">
           {currentStep === 1 && (
+            <form onSubmit={onNext}>
+              <div className="form-group">
+                <label htmlFor="referralCode">Enter your referral Code</label>
+                <input
+                  type="text"
+                  placeholder="Enter your Referral Code here"
+                  value={data.referralCode}
+                  onChange={(e) =>
+                    onChange("referralCode", e.currentTarget.value)
+                  }
+                />
+                <button type="submit">Next</button>
+              </div>
+            </form>
+          )}
+
+          {currentStep === 2 && (
             <div className="form-group">
-              <label htmlFor="name">Review</label>
               <div className="payment-card confirm-payment">
                 <h3>{selected.cardTitle}</h3>
+                <h5>{selected.cardDesc}</h5>
                 <h3>{selected.price.type}</h3>
                 <p>{selected.price.title}</p>
                 <h4>${selected.price.amount}</h4>
-
-                <h5>{selected.cardDesc}</h5>
               </div>
               <button onClick={handleNext}>Next</button>
             </div>
           )}
 
-          {currentStep === 2 && (
+          {currentStep === 3 && (
             <form onSubmit={onNext}>
               <div className="form-group">
                 <label htmlFor="email">Enter your Email to get started</label>
@@ -124,7 +145,7 @@ const PaymentFormSteps = ({ isOpen, selected }) => {
             </form>
           )}
 
-          {currentStep === 3 && (
+          {currentStep === 4 && (
             <form onSubmit={onNext}>
               <div className="form-group">
                 <label htmlFor="name">Enter your name</label>
@@ -204,7 +225,7 @@ const PaymentFormSteps = ({ isOpen, selected }) => {
             </form>
           )}
 
-          {currentStep === 4 && (
+          {currentStep === 5 && (
             <Checkout
               packageDetails={selected}
               user={data}
