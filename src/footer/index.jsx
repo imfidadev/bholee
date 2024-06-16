@@ -1,12 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import "./style.scss";
-import {
-  facebook,
-  instagram,
-  telegram,
-  twitter,
-} from "../assets/images/images";
 
 const Footer = () => {
   return (
@@ -16,7 +10,7 @@ const Footer = () => {
           <div className="item">
             <h4>Contacts</h4>
             <p>info@bholeeyoga.com</p>
-            <ul className="social-icons">
+            {/* <ul className="social-icons">
               <li>
                 <a
                   target="_blank"
@@ -41,9 +35,9 @@ const Footer = () => {
                   <img src={facebook} alt="facebook" />
                 </a>
               </li>
-            </ul>
+            </ul> */}
           </div>
-          <div className="item">
+          {/* <div className="item">
             <h4>Address</h4>
             <p>107th St, Inglewood, CA 90303, USA</p>
             <p>+123 456 789</p>
@@ -52,7 +46,7 @@ const Footer = () => {
             <h4>Information</h4>
             <p>Private Policy</p>
             <p>Contract Offer</p>
-          </div>
+          </div> */}
         </div>
         <div className="copyrights">
           <p>

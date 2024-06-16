@@ -23,7 +23,7 @@ code {
 
 .main-content {
   min-height: calc(100vh - 326px);
-  padding-top: 78px;
+  /* padding-top: 78px; */
 }
 
 .thank-you {

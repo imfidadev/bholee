@@ -30,9 +30,6 @@ const EventHero = () => {
           }}
         >
           <SwiperSlide>
-            <img src={heroImg} alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
             <img src={heroImg2} alt="" />
           </SwiperSlide>
           <SwiperSlide>

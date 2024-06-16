@@ -32,6 +32,26 @@
         max-width: 500px;
         width: 100%;
         padding-bottom: 30px;
+        textarea {
+          border: 0;
+          border-bottom: 1px solid #ba936f;
+          background-color: transparent;
+          color: #343434;
+          font-family: "Lora", serif;
+          font-size: 16px;
+          font-weight: 400;
+          outline: none;
+          resize: none;
+          width: 100%;
+          padding-block: 5px;
+          &::placeholder {
+            color: #ba936f;
+            font-family: "Montserrat", sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19.5px;
+          }
+        }
         input {
           background-color: transparent;
           border: 0;

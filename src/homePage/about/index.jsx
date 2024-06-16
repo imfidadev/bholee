@@ -11,7 +11,7 @@ const HomeAbout = () => {
     <section className="home-about" id="about">
       <div className="text-content">
         <h3>
-          WHo is <br /> Mahrukh Ahmed?
+          WHo is <br /> Mahrukh?
         </h3>
         <p>
           Mahrukh Ahmad, E-RYT-500 yoga teacher, was born in Lahore, Pakistan.
