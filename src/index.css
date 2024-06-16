@@ -25,3 +25,34 @@ code {
   min-height: calc(100vh - 326px);
   padding-top: 78px;
 }
+
+.thank-you {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 440px);
+  flex-direction: column;
+  gap: 20px;
+  padding-block: 50px;
+  padding-inline: 10px;
+  h2 {
+    font-size: 45px;
+    line-height: 55px;
+    color: #ba936f;
+    @media (max-width: 768px) {
+      font-size: 36px;
+      line-height: 44px;
+    }
+    }
+    p {
+      font-size: 25px;
+      line-height: 55px;
+      color: #343434;
+        @media (max-width: 768px) {
+          font-size: 16px;
+          line-height: 24px;
+        }
+  }
+}

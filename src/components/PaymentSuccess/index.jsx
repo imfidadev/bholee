@@ -40,7 +40,12 @@ const PaymentSuccess = () => {
     sendMail();
   }, []);
 
-  return <h2>Thank you </h2>;
+  return (
+    <div className="thank-you">
+      <h2>Thank you for your Registration</h2>
+      <p>We will Get back to you Soon!</p>
+    </div>
+  );
 };
 
 export default PaymentSuccess;
