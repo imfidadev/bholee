@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./style.scss";
 import { NavLink } from "react-router-dom";
 import { logo } from "../assets/images/images";
+import { scrollToTop } from "../common/ScrollToTop";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,6 +12,7 @@ const Header = () => {
   };
   const closeMenu = () => {
     setIsOpen(false);
+    scrollToTop();
   };
   return (
     <header>
@@ -25,7 +27,9 @@ const Header = () => {
         </div>
         <ul className={`nav-links ${isOpen ? "active" : ""}`}>
           <li>
-            <NavLink to="/" onClick={closeMenu}>Home</NavLink>
+            <NavLink to="/" onClick={closeMenu}>
+              Home
+            </NavLink>
           </li>
           <li>
             <NavLink to="/events" onClick={closeMenu}>

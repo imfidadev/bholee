@@ -58,7 +58,7 @@ const HomeHero = () => {
         </Swiper>
       </div>
       <div className="hero-content">
-        <h1>
+        <h1 className="main-hero-title">
           Hello, <br /> I am Mahrukh Nice to meet you
         </h1>
         <div className="anchor-link">
