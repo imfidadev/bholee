@@ -37,11 +37,11 @@ const HomeAbout = () => {
           modules={[Autoplay, EffectFade]}
           speed={1000}
           loop={true}
-          // autoplay={{
-          //   delay: 3000,
-          //   disableOnInteraction: false,
-          // }}
-          autoplay={false}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+          }}
+          // autoplay={false}
         >
           <SwiperSlide>
             <img src={aboutImg} alt="about-img" />
