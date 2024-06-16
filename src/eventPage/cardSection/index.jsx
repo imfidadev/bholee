@@ -6,8 +6,13 @@ import PaymentModal from "../../components/paymentModal/paymentModal";
 
 const CardSection = () => {
   const [isModalOpen, setModalOpen] = useState(false);
+  const [selected, setSelected] = useState(null);
 
-  const openModal = () => setModalOpen(true);
+  const handleSelected = (data) => {
+    setSelected(data);
+    setModalOpen(true);
+  };
+
   const closeModal = () => setModalOpen(false);
   return (
     <section className="card-section">
@@ -33,7 +38,7 @@ const CardSection = () => {
       </div>
 
       <div className="cards">
-        <RetreatCard openModal={openModal} />
+        <RetreatCard handleSelected={handleSelected} />
       </div>
 
       <PaymentModal
@@ -41,6 +46,7 @@ const CardSection = () => {
         amount={100}
         isOpen={isModalOpen}
         onClose={closeModal}
+        selected={selected}
       />
     </section>
   );

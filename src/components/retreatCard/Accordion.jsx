@@ -24,7 +24,7 @@ const CardAccordion = () => {
                 type="radio"
                 id="firstSingle"
                 name="customRadio"
-                value="1"
+                value="1450"
                 className="custom-radio"
               />
               <label for="firstSingle">Single occupancy</label>
@@ -49,7 +49,7 @@ const CardAccordion = () => {
                 type="radio"
                 id="secondSingle"
                 name="customRadio"
-                value="1"
+                value="1450"
                 className="custom-radio"
               />
               <label for="secondSingle">Single occupancy</label>
@@ -62,7 +62,7 @@ const CardAccordion = () => {
                 type="radio"
                 id="secondDouble"
                 name="customRadio"
-                value="1"
+                value="3400"
                 className="custom-radio"
               />
               <label for="secondDouble">Double occupancy</label>
@@ -91,7 +91,7 @@ const CardAccordion = () => {
                 type="radio"
                 id="thirdDouble"
                 name="customRadio"
-                value="1"
+                value="4300"
                 className="custom-radio"
               />
               <label for="thirdDouble">Double occupancy</label>
@@ -120,7 +120,7 @@ const CardAccordion = () => {
                 type="radio"
                 id="fourthSingle"
                 name="customRadio"
-                value="1"
+                value="1850"
                 className="custom-radio"
               />
               <label for="fourthSingle">Single occupancy</label>
@@ -133,7 +133,7 @@ const CardAccordion = () => {
                 type="radio"
                 id="fourthDouble"
                 name="customRadio"
-                value="1"
+                value="3400"
                 className="custom-radio"
               />
               <label for="fourthDouble">Double occupancy</label>
