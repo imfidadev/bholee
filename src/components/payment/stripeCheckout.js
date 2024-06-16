@@ -13,6 +13,7 @@ import { parseError } from "../../utils";
 const stripePromise = loadStripe(configs.stripePublicKey);
 
 const CheckoutForm = ({
+  packageDetails,
   user,
   currency,
   amount,
@@ -37,14 +38,24 @@ const CheckoutForm = ({
 
     createPaymentIntent({ currency, amount })
       .then(async (response) => {
+        const { cardTitle, cardDesc, price } = packageDetails;
+        const packageData = {
+          plan_title: cardTitle,
+          plan_desc: cardDesc,
+        };
+
         const { error, paymentIntent } = await stripe.confirmPayment({
           elements,
           clientSecret: response.data.clientSecret,
-          redirect: "if_required",
+          //   redirect: "if_required",
           confirmParams: {
             return_url: `${
               configs.appURL
-            }/checkout/success?user=${JSON.stringify(user)}`,
+            }/checkout/success?user=${JSON.stringify(
+              user
+            )}&package=${JSON.stringify(packageData)}&price=${JSON.stringify(
+              price
+            )}`,
           },
         });
 
@@ -84,7 +95,15 @@ const CheckoutForm = ({
   );
 };
 
-const Checkout = ({ user, currency, amount, loading, onSuccess }) => {
+const Checkout = ({
+  packageDetails,
+  user,
+  currency = "usd",
+  loading,
+  onSuccess,
+}) => {
+  const amount = parseFloat(packageDetails.price.amount) * 100;
+
   return (
     <Elements
       stripe={stripePromise}
@@ -97,6 +116,7 @@ const Checkout = ({ user, currency, amount, loading, onSuccess }) => {
       <ElementsConsumer>
         {({ stripe, elements }) => (
           <CheckoutForm
+            packageDetails={packageDetails}
             user={user}
             currency={currency}
             amount={amount}

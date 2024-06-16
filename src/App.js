@@ -21,13 +21,13 @@ function App() {
       />
 
       <Header />
-      {/* <div className="main-content"> */}
+      <div className="main-content">
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/events" element={<EventPage />} />
           <Route path="/checkout/success" element={<PaymentSuccess />} />
         </Routes>
-      {/* </div> */}
+      </div>
       <Footer />
     </>
   );

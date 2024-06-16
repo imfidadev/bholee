@@ -42,8 +42,6 @@ const CardSection = () => {
       </div>
 
       <PaymentModal
-        currency={"usd"}
-        amount={100}
         isOpen={isModalOpen}
         onClose={closeModal}
         selected={selected}

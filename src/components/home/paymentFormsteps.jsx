@@ -4,7 +4,7 @@ import { bookingMail } from "../../api/actions";
 import { toast } from "react-toastify";
 import { parseError } from "../../utils";
 
-const PaymentFormSteps = ({ currency, amount, isOpen, selected }) => {
+const PaymentFormSteps = ({ isOpen, selected }) => {
   const [loading, setLoading] = useState(false);
   const [currentStep, setCurrentStep] = useState(1);
 
@@ -98,7 +98,10 @@ const PaymentFormSteps = ({ currency, amount, isOpen, selected }) => {
               <label htmlFor="name">Review</label>
               <div className="payment-card confirm-payment">
                 <h3>{selected.cardTitle}</h3>
-                <h4>${amount}</h4>
+                <h3>{selected.price.type}</h3>
+                <p>{selected.price.title}</p>
+                <h4>${selected.price.amount}</h4>
+
                 <h5>{selected.cardDesc}</h5>
               </div>
               <button onClick={handleNext}>Next</button>
@@ -203,9 +206,8 @@ const PaymentFormSteps = ({ currency, amount, isOpen, selected }) => {
 
           {currentStep === 4 && (
             <Checkout
+              packageDetails={selected}
               user={data}
-              currency={currency}
-              amount={amount}
               loading={loading}
               onSuccess={onPaymentSuccess}
             />
