@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from "react";
 import Checkout from "../payment/stripeCheckout";
-import { bookingMail, createPaymentIntent } from "../../api/actions";
+import { bookingMail } from "../../api/actions";
 import { toast } from "react-toastify";
 import { parseError } from "../../utils";
 
 const PaymentFormSteps = ({ currency, amount, isOpen }) => {
   const [loading, setLoading] = useState(false);
   const [currentStep, setCurrentStep] = useState(1);
-  const [intent, setIntent] = useState(null);
 
   const [data, setData] = useState({
     email: "",
@@ -42,9 +41,7 @@ const PaymentFormSteps = ({ currency, amount, isOpen }) => {
   };
 
   const handleNext = () => {
-    if (currentStep < 4) {
-      setCurrentStep(currentStep + 1);
-    }
+    setCurrentStep(currentStep + 1);
   };
 
   const onNext = (e) => {
@@ -66,20 +63,9 @@ const PaymentFormSteps = ({ currency, amount, isOpen }) => {
       });
   };
 
-  const createIntent = () => {
-    createPaymentIntent({ currency, amount })
-      .then((response) => {
-        setIntent(response.data);
-      })
-      .catch((error) => {
-        toast.error(parseError(error));
-      });
-  };
-
   useEffect(() => {
     resetFormDetails();
-    createIntent();
-  }, [currency, amount, isOpen]);
+  }, [isOpen]);
 
   return (
     <div className="form-step">
@@ -89,25 +75,39 @@ const PaymentFormSteps = ({ currency, amount, isOpen }) => {
           <ul>
             <li className={currentStep === 1 ? "active" : ""}>
               <span>1</span>
-              Your Email
+              Review Plan
             </li>
             <li className={currentStep === 2 ? "active" : ""}>
               <span>2</span>
-              Your Billing Address
+              Your Email
             </li>
             <li className={currentStep === 3 ? "active" : ""}>
               <span>3</span>
-              Payment Method
+              Your Billing Address
             </li>
             <li className={currentStep === 4 ? "active" : ""}>
               <span>4</span>
-              Almost Done
+              Payment
             </li>
           </ul>
         </div>
 
         <div className="col">
           {currentStep === 1 && (
+            <div className="form-group">
+              <label htmlFor="name">Review</label>
+              <div className="payment-card confirm-payment">
+                <h3>SHARED OCCUPANCY</h3>
+                <h4>$3600</h4>
+                <h5>
+                  Ocean View, King bed with friend/family, private bathroom
+                </h5>
+              </div>
+              <button onClick={handleNext}>Next</button>
+            </div>
+          )}
+
+          {currentStep === 2 && (
             <form onSubmit={onNext}>
               <div className="form-group">
                 <label htmlFor="email">Enter your Email to get started</label>
@@ -123,7 +123,7 @@ const PaymentFormSteps = ({ currency, amount, isOpen }) => {
             </form>
           )}
 
-          {currentStep === 2 && (
+          {currentStep === 3 && (
             <form onSubmit={onNext}>
               <div className="form-group">
                 <label htmlFor="name">Enter your name</label>
@@ -203,26 +203,14 @@ const PaymentFormSteps = ({ currency, amount, isOpen }) => {
             </form>
           )}
 
-          {currentStep === 3 && (
+          {currentStep === 4 && (
             <Checkout
-              intent={intent}
+              user={data}
+              currency={currency}
+              amount={amount}
               loading={loading}
               onSuccess={onPaymentSuccess}
             />
-          )}
-
-          {currentStep === 4 && (
-            <div className="form-group">
-              <label htmlFor="name">Choose your Payment Method</label>
-              <div className="payment-card confirm-payment">
-                <h3>SHARED OCCUPANCY</h3>
-                <h4>$3600</h4>
-                <h5>
-                  Ocean View, King bed with friend/family, private bathroom
-                </h5>
-              </div>
-              <button onClick={handleNext}>Next</button>
-            </div>
           )}
         </div>
       </div>
