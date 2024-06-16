@@ -18,7 +18,7 @@ const Header = () => {
     <header>
       <nav className="navbar">
         <div className="logo">
-          <NavLink>
+          <NavLink to="/" onClick={closeMenu}>
             <img src={logo} alt="logo" />
           </NavLink>
         </div>

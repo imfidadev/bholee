@@ -1,15 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 .home-hero {
-  // background-image: url("../../assets/images/heroImg.svg");
-  // background-size: cover;
   min-height: 100vh;
   display: flex;
   align-items: center;
-  // background-position: center;
   position: relative;
   @media (max-width: 768px) {
     align-items: flex-end;
-    // background-position: 75% 100%;
   }
   .hero-slider {
     position: absolute;
@@ -35,7 +31,6 @@
         rgba(0, 0, 0, 0.59) 71.91%,
         #000000 100%
       );
-      // background-color: rgba(0,0,0,0.3);
       z-index: 1;
     }
   }

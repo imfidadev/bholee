@@ -8,7 +8,7 @@ const CardElement = ({ item, index, handleSelected }) => {
   const [isShowMoreFirstCard, setIsShowMoreFirstCard] = useState(false);
 
   return (
-    <div className="retreat-card" key={index}>
+    <div className="retreat-card" key={index} id="retreatCard">
       <div className="card-img">
         <img src={item.cardImg} alt="card-img" />
       </div>
