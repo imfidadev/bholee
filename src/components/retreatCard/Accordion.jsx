@@ -10,7 +10,7 @@ import "react-accessible-accordion/dist/fancy-example.css";
 
 const CardAccordion = ({ data, index }) => {
   return (
-    <Accordion>
+    <Accordion allowMultipleExpanded>
       {data.map((item, priceIndex) => (
         <AccordionItem key={priceIndex}>
           <AccordionItemHeading>

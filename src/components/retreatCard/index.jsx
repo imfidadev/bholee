@@ -39,6 +39,7 @@ const CardElement = ({ item, index, handleSelected }) => {
               )?.value;
 
               if (value === null || value === undefined) {
+                setIsShowMoreFirstCard(true);
                 toast.error("Please select a price");
                 return;
               }
