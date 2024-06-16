@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "./style.scss";
 import PaymentFormSteps from "../home/paymentFormsteps";
 
-const PaymentModal = ({ isOpen, onClose }) => {
+const PaymentModal = ({ isOpen, onClose, currency, amount }) => {
   useEffect(() => {
     if (isOpen) {
       document.body.classList.add("modal-open");
@@ -13,6 +13,7 @@ const PaymentModal = ({ isOpen, onClose }) => {
       document.body.classList.remove("modal-open");
     };
   }, [isOpen]);
+
   if (!isOpen) return null;
 
   return (
@@ -27,7 +28,7 @@ const PaymentModal = ({ isOpen, onClose }) => {
         <button className="modal-close" onClick={onClose}>
           &times;
         </button>
-        <PaymentFormSteps />
+        <PaymentFormSteps currency={currency} amount={amount} isOpen={isOpen} />
       </div>
     </div>
   );

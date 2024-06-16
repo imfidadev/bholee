@@ -31,10 +31,17 @@ const CardSection = () => {
           <b>Feel free to join one or both retreats.</b>
         </p>
       </div>
+
       <div className="cards">
-        <RetreatCard openModal={openModal}/>
+        <RetreatCard openModal={openModal} />
       </div>
-      <PaymentModal isOpen={isModalOpen} onClose={closeModal} />
+
+      <PaymentModal
+        currency={"usd"}
+        amount={100}
+        isOpen={isModalOpen}
+        onClose={closeModal}
+      />
     </section>
   );
 };
