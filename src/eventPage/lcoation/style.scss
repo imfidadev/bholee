@@ -1,0 +1,43 @@
+.event-location {
+  margin-block: 50px;
+  padding-top: 50px;
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 20px;
+  h2 {
+    color: #ba936f;
+    font-family: "Lora", serif;
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 57.6px;
+    margin-bottom: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    @media (max-width: 768px) {
+      font-size: 35px;
+      margin-bottom: 20px;
+      line-height: 47.6px;
+    }
+  }
+  h4 {
+    font-family: "Lora", serif;
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 57.6px;
+    text-align: center;
+    color: #343434;
+    margin-bottom: 40px;
+    @media (max-width: 768px) {
+      line-height: 47.6px;
+      font-size: 35px;
+      margin-bottom: 20px;
+    }
+  }
+  .youtube-thumbnail {
+    img {
+      max-height: 675px;
+      width: 100%;
+    }
+  }
+}

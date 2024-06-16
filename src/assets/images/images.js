@@ -1,5 +1,8 @@
 import logo from "./logo.svg";
 import heroImg from "./heroImg.jpg";
+import homeHero2 from "./homeHero2.jpg";
+import homeHero3 from "./homeHero3.jpg";
+import homeHero4 from "./homeHero4.jpg";
 import heroImg2 from "./heroImg2.jpg";
 import heroImg3 from "./heroImg3.jpg";
 import heroImg4 from "./heroImg4.jpg";
@@ -8,8 +11,8 @@ import heroImg6 from "./heroImg6.jpg";
 import heroLogo from "./heroLogo.svg";
 import heroCircle from "./heroCircle.png";
 import heroArrow from "./heroArrow.png";
-import aboutImg from "./aboutImg.png";
-import handImg from "./handImg.png";
+import aboutImg from "./aboutImg.jpg";
+import handImg from "./hand-img.jpg";
 import galleryImg from "./galleryImg.png";
 import bgLogo from "./bgLogo.svg";
 import facebook from "./facebook.svg";
@@ -27,8 +30,19 @@ import JCB from "./JCB.svg";
 import UnionPay from "./UnionPay.svg";
 import retreatCardImg1 from "./retreatCardImg1.svg";
 import retreatCardImg2 from "./retreatCardImg2.svg";
+import retreatImg1 from "./retreatImg1.jpg";
+import retreatImg2 from "./retreatImg2.jpg";
+import youtubeThumb from "./youtube-thumb.jpg";
+import eventCardImg from "./eventCardImg.jpg";
 
 export {
+  eventCardImg,
+  youtubeThumb,
+  retreatImg1,
+  retreatImg2,
+  homeHero4,
+  homeHero3,
+  homeHero2,
   retreatCardImg1,
   retreatCardImg2,
   formImage,
