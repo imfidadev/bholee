@@ -1,6 +1,32 @@
 import React from "react";
+import {
+  eventCardImg,
+  eventSlider10,
+  eventSlider11,
+  eventSlider12,
+  eventSlider13,
+  eventSlider14,
+  eventSlider15,
+  eventSlider16,
+  eventSlider17,
+  eventSlider18,
+  eventSlider19,
+  eventSlider2,
+  eventSlider20,
+  eventSlider21,
+  eventSlider3,
+  eventSlider4,
+  eventSlider5,
+  eventSlider6,
+  eventSlider7,
+  eventSlider8,
+  eventSlider9,
+} from "../../assets/images/images";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, EffectFade } from "swiper/modules";
 import "./style.scss";
-import { eventCardImg } from "../../assets/images/images";
+import "swiper/css";
+import "swiper/css/effect-fade";
 
 const EventProperty = () => {
   const scrollToSection = (id) => {
@@ -24,7 +50,83 @@ const EventProperty = () => {
       </p>
       <div className="event-card">
         <div className="event-card-img">
-          <img src={eventCardImg} alt="card-img" />
+          <Swiper
+            spaceBetween={0}
+            slidesPerView={1}
+            effect={"fade"}
+            modules={[Autoplay, EffectFade]}
+            speed={1000}
+            loop={true}
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+            }}
+            // autoplay={false}
+          >
+            <SwiperSlide>
+              <img src={eventCardImg} alt="card-img" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={eventSlider2} alt="about-img" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={eventSlider3} alt="about-img" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={eventSlider4} alt="about-img" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={eventSlider5} alt="about-img" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={eventSlider6} alt="about-img" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={eventSlider7} alt="about-img" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={eventSlider8} alt="about-img" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={eventSlider9} alt="about-img" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={eventSlider10} alt="about-img" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={eventSlider11} alt="about-img" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={eventSlider12} alt="about-img" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={eventSlider13} alt="about-img" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={eventSlider14} alt="about-img" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={eventSlider15} alt="about-img" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={eventSlider16} alt="about-img" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={eventSlider17} alt="about-img" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={eventSlider18} alt="about-img" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={eventSlider19} alt="about-img" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={eventSlider20} alt="about-img" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={eventSlider21} alt="about-img" />
+            </SwiperSlide>
+          </Swiper>
         </div>
         <div className="event-card-info">
           <h3>

@@ -42,7 +42,7 @@
     border-radius: 12px;
     padding: 28px;
     margin-block: 40px;
-    @media (max-width: 768px) {
+    @media (max-width: 992px) {
       padding: 18px;
       flex-direction: column;
       gap: 20px;
@@ -50,7 +50,7 @@
     }
     .event-card-img {
       max-width: 620px;
-      @media (max-width: 768px) {
+      @media (max-width: 992px) {
         max-width: none;
       }
       img {
@@ -61,7 +61,7 @@
       max-width: 409px;
       width: 100%;
       margin-inline: auto;
-      @media (max-width: 768px) {
+      @media (max-width: 992px) {
         max-width: none;
       }
       h3 {

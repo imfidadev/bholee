@@ -36,8 +36,48 @@ import retreatImg1 from "./retreatImg1.jpg";
 import retreatImg2 from "./retreatImg2.jpg";
 import youtubeThumb from "./youtube-thumb.jpg";
 import eventCardImg from "./eventCardImg.jpg";
+import eventSlider2 from "./eventPageSlider/eventSlider2.jpg";
+import eventSlider3 from "./eventPageSlider/eventSlider3.jpg";
+import eventSlider4 from "./eventPageSlider/eventSlider4.jpg";
+import eventSlider5 from "./eventPageSlider/eventSlider5.jpg";
+import eventSlider6 from "./eventPageSlider/eventSlider6.jpg";
+import eventSlider7 from "./eventPageSlider/eventSlider7.jpg";
+import eventSlider8 from "./eventPageSlider/eventSlider8.jpg";
+import eventSlider9 from "./eventPageSlider/eventSlider9.jpg";
+import eventSlider10 from "./eventPageSlider/eventSlider10.jpg";
+import eventSlider11 from "./eventPageSlider/eventSlider11.jpg";
+import eventSlider12 from "./eventPageSlider/eventSlider12.jpg";
+import eventSlider13 from "./eventPageSlider/eventSlider13.jpg";
+import eventSlider14 from "./eventPageSlider/eventSlider14.jpg";
+import eventSlider15 from "./eventPageSlider/eventSlider15.jpg";
+import eventSlider16 from "./eventPageSlider/eventSlider16.jpg";
+import eventSlider17 from "./eventPageSlider/eventSlider17.jpg";
+import eventSlider18 from "./eventPageSlider/eventSlider18.jpg";
+import eventSlider19 from "./eventPageSlider/eventSlider19.jpg";
+import eventSlider20 from "./eventPageSlider/eventSlider20.jpg";
+import eventSlider21 from "./eventPageSlider/eventSlider21.jpg";
 
 export {
+  eventSlider2,
+  eventSlider3,
+  eventSlider4,
+  eventSlider5,
+  eventSlider6,
+  eventSlider7,
+  eventSlider8,
+  eventSlider9,
+  eventSlider10,
+  eventSlider11,
+  eventSlider12,
+  eventSlider13,
+  eventSlider14,
+  eventSlider15,
+  eventSlider16,
+  eventSlider17,
+  eventSlider18,
+  eventSlider19,
+  eventSlider20,
+  eventSlider21,
   aboutImg2,
   aboutImg3,
   eventCardImg,

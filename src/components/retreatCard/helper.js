@@ -17,10 +17,6 @@ export const retreatCardInfo = [
             title: "Single occupancy",
             amount: 1450,
           },
-          {
-            title: "sample test",
-            amount: 1,
-          },
         ],
       },
       {
