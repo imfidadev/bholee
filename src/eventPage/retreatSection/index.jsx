@@ -82,7 +82,7 @@ const RetreatSection = () => {
             <h2>Retreat - 2</h2>
             <div>
               <h4>The Body Holiday</h4>
-              <h4>Sept 22-28</h4>
+              <h4>Sept 25-28</h4>
             </div>
             <p>Sacred Rest and Reset Yoga and Meditation Retreat</p>
           </div>

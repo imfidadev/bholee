@@ -15,9 +15,7 @@ const CardElement = ({ item, index, handleSelected }) => {
       </div>
 
       <div className="card-content">
-        <h2>
-          {item.id}. {item.cardTitle}
-        </h2>
+        <h2>{item.cardTitle}</h2>
 
         <p className="card-desc">{item.cardDesc}</p>
 

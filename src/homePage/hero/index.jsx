@@ -50,8 +50,8 @@ const HomeHero = () => {
           <div className="hero-circle">
             <img src={heroCircle} alt="hero-circle" />
           </div>
-          <span>More about Bholee</span>
-          <img src={heroArrow} alt="hero-arrow" />
+          {/* <span>More about Bholee</span>
+          <img src={heroArrow} alt="hero-arrow" /> */}
         </div>
       </div>
       <div className="hero-logo">

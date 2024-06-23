@@ -50,7 +50,7 @@ const Footer = () => {
         </div>
         <div className="copyrights">
           <p>
-            {new Date().getFullYear()} ©Bholee Yoga Studio. All Rights Reserved.
+            {new Date().getFullYear()} ©Bholee Yoga LLC. All Rights Reserved.
           </p>
         </div>
       </div>

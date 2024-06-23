@@ -84,7 +84,7 @@ const ContactForm = () => {
             </div>
 
             <div className="checkbox">
-              <input
+              {/* <input
                 type="checkbox"
                 id="checkbox"
                 checked={data.accept}
@@ -92,9 +92,9 @@ const ContactForm = () => {
               />
               <label htmlFor="checkbox">
                 I give my consent to the processing of personal data
-              </label>
+              </label> */}
               <div className="send">
-                <button type="submit" disabled={loading || !data.accept}>
+                <button type="submit" disabled={loading}>
                   {loading ? "Sending..." : "Send"}
                 </button>
               </div>
