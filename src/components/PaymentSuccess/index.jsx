@@ -26,7 +26,16 @@ const PaymentSuccess = () => {
 
   const sendMail = () => {
     setLoading(true);
-    bookingMail({ ...user, paymentId, ...packageDetails, ...price })
+    const payload = {
+      ...user,
+      paymentId,
+      ...packageDetails,
+      ...price,
+      amount: price.priceDetail.price,
+    };
+
+    delete payload.priceDetail;
+    bookingMail(payload)
       .then(() => {
         setLoading(false);
       })

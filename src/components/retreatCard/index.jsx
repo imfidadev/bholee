@@ -3,6 +3,7 @@ import { retreatCardInfo } from "./helper";
 import "./style.scss";
 import CardAccordion from "./Accordion";
 import { toast } from "react-toastify";
+import { calculatePricingDetail } from "../../helpers/pricing";
 
 const CardElement = ({ item, index, handleSelected }) => {
   const [isShowMoreFirstCard, setIsShowMoreFirstCard] = useState(false);
@@ -23,7 +24,11 @@ const CardElement = ({ item, index, handleSelected }) => {
         <div
           className={`retreat-accordion ${isShowMoreFirstCard ? "show" : ""}`}
         >
-          <CardAccordion data={item.prices} index={index} />
+          <CardAccordion
+            data={item.prices}
+            discount={item.discount}
+            index={index}
+          />
         </div>
 
         <div className="check-in-out">
@@ -48,6 +53,12 @@ const CardElement = ({ item, index, handleSelected }) => {
               const priceObj = { ...retreatCardInfo[ind[0]].prices[ind[1]] };
               priceObj.type = priceObj.amounts[ind[2]].title;
               priceObj.amount = priceObj.amounts[ind[2]].amount;
+
+              priceObj.priceDetail = calculatePricingDetail(
+                item.discount,
+                priceObj.amount
+              );
+
               delete priceObj.amounts;
 
               const resp = {
@@ -56,6 +67,8 @@ const CardElement = ({ item, index, handleSelected }) => {
               };
 
               delete resp.prices;
+              delete resp.discount;
+
               handleSelected(resp);
             }}
           >

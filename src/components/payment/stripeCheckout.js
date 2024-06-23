@@ -88,7 +88,9 @@ const CheckoutForm = ({
       <PaymentElement />
       <div className="form-group">
         <button disabled={!stripe || loading || paymentLoading}>
-          {loading || paymentLoading ? "Loading..." : "Pay"}
+          {loading || paymentLoading
+            ? "Loading..."
+            : `Pay $${packageDetails.price.priceDetail.price}`}
         </button>
       </div>
     </form>
@@ -102,7 +104,7 @@ const Checkout = ({
   loading,
   onSuccess,
 }) => {
-  const amount = parseFloat(packageDetails.price.amount) * 100;
+  const amount = parseFloat(packageDetails.price.priceDetail.price) * 100;
 
   return (
     <Elements

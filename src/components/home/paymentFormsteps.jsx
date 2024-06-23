@@ -123,7 +123,21 @@ const PaymentFormSteps = ({ isOpen, selected }) => {
                 <h5>{selected.cardDesc}</h5>
                 <h3>{selected.price.type}</h3>
                 <p>{selected.price.title}</p>
-                <h4>${selected.price.amount}</h4>
+
+                <h4
+                  className={
+                    selected.price.priceDetail.isDiscount ? "line-through" : ""
+                  }
+                >
+                  ${selected.price.amount}
+                </h4>
+
+                {selected.price.priceDetail.isDiscount && (
+                  <>
+                    <h4>${selected.price.priceDetail.price}</h4>
+                    <h5>{selected.price.priceDetail.till}</h5>
+                  </>
+                )}
               </div>
               <button onClick={handleNext}>Next</button>
             </div>

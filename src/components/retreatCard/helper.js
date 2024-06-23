@@ -8,6 +8,12 @@ export const retreatCardInfo = [
     cardImg: retreatCardImg1,
     checkIn: "Sept 22, 2024 @ 4pm",
     checkOut: "Sept 25, 2024 @ 12pm",
+    discount: {
+      active: true,
+      percentage: 15,
+      start: "2024-06-23T00:00:00Z",
+      end: "2024-07-31T23:59:59Z",
+    },
     prices: [
       {
         title: "Shared room + shared bathroom (level 1) 6 rooms, 12 spots",
@@ -70,6 +76,12 @@ export const retreatCardInfo = [
     cardImg: retreatCardImg2,
     checkIn: "Sept 25, 2024 @ 4pm",
     checkOut: "Sept 28, 2024 @ 12pm",
+    discount: {
+      active: true,
+      percentage: 15,
+      start: "2024-06-23T00:00:00Z",
+      end: "2024-07-31T23:59:59Z",
+    },
     prices: [
       {
         title: "Shared room + shared bathroom (level 1) 6 rooms, 12 spots",
