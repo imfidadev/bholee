@@ -57,6 +57,7 @@ const CardAccordion = ({ data, discount, index }) => {
             })}
 
             <div className="description">
+              <span>{item.doubleText}</span>
               <p>{item.description}</p>
             </div>
           </AccordionItemPanel>

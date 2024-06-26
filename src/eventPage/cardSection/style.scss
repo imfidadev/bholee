@@ -3,6 +3,30 @@
   width: 100%;
   margin-inline: auto;
   padding-inline: 20px;
+  .event-anchor-links {
+    margin-block: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 60px;
+    @media (max-width: 768px) {
+      gap: 30px;
+    }
+    a {
+      cursor: pointer;
+      font-family: "Lora", serif;
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 27px;
+      margin-bottom: 20px;
+      color: #343434;
+      text-decoration: none;
+      @media (max-width: 768px) {
+        font-size: 18px;
+      }
+    }
+  }
   .gallery-text {
     margin-bottom: 90px;
     margin-top: 80px;
@@ -22,8 +46,8 @@
       margin-bottom: 20px;
       color: #343434;
       @media (max-width: 768px) {
-      line-height: 25px;
-      font-size: 16px;
+        line-height: 25px;
+        font-size: 16px;
       }
     }
     .bg-logo {

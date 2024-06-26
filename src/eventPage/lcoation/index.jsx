@@ -4,7 +4,7 @@ import { youtubeThumb } from "../../assets/images/images";
 
 const EventLocation = () => {
   return (
-    <section className="event-location">
+    <section className="event-location" id="location">
       <h2>The location</h2>
       <h4>OBX 4x4 wild horses Beach, NC</h4>
       <div class="youtube-thumbnail">

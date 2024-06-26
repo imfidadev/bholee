@@ -46,14 +46,12 @@ const EventHero = () => {
           </SwiperSlide>
         </Swiper>
       </div>
-      <div className="hero-content">
+      <div className="event-hero-content">
         <h1>
-          Bholee Yoga
-          <br />
-          and Wellness Retreats
+          Bholee Yoga and Wellness Retreats
         </h1>
-        <h3>A JOURNEY TO SELF-DISCOVERY</h3>
-        <p>All Inclusive- Hosted by Bholee Yoga</p>
+        {/* <h3>All Inclusive- Hosted by Bholee Yoga</h3>
+        <p>Feel free to join one or both retreats</p> */}
       </div>
       <div className="hero-logo">
         <img src={heroLogo} alt="hero-logo" />

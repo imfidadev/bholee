@@ -13,6 +13,33 @@ const HomeAbout = () => {
         <h3>
           WHo is <br /> Mahrukh?
         </h3>
+        <div className="img-content">
+          <Swiper
+            spaceBetween={0}
+            slidesPerView={1}
+            effect={"fade"}
+            modules={[Autoplay, EffectFade]}
+            speed={1000}
+            loop={true}
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+            }}
+            // autoplay={false}
+          >
+            <SwiperSlide>
+              <img src={aboutImg} alt="about-img" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={aboutImg2} alt="about-img" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={aboutImg3} alt="about-img" />
+            </SwiperSlide>
+          </Swiper>
+        </div>
+      </div>
+      <div className="text-content">
         <p>
           Mahrukh Ahmad, E-RYT-500 yoga teacher, was born in Lahore, Pakistan.
         </p>
@@ -28,31 +55,6 @@ const HomeAbout = () => {
           compassionate and dedicated yoga teacher who leads with heart and
           guides her students on a soulful journey of self-discovery and growth.
         </p>
-      </div>
-      <div className="img-content">
-        <Swiper
-          spaceBetween={0}
-          slidesPerView={1}
-          effect={"fade"}
-          modules={[Autoplay, EffectFade]}
-          speed={1000}
-          loop={true}
-          autoplay={{
-            delay: 3000,
-            disableOnInteraction: false,
-          }}
-          // autoplay={false}
-        >
-          <SwiperSlide>
-            <img src={aboutImg} alt="about-img" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={aboutImg2} alt="about-img" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={aboutImg3} alt="about-img" />
-          </SwiperSlide>
-        </Swiper>
       </div>
     </section>
   );

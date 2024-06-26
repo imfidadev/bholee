@@ -17,7 +17,7 @@ const InstagramPosts = () => {
       })
       .catch((error) => {
         setLoading(false);
-        toast.error(parseError(error));
+        // toast.error(parseError(error));
       });
   };
 
@@ -33,7 +33,7 @@ const InstagramPosts = () => {
         visuals, exclusive behind-the-scenes content, and much more. Follow us
         now to stay updated on our latest products, events, and happenings.
       </p>
-      <p className="tags">@bholeeyoga #bholee</p>
+      <p className="tags">@bholeeyoga #bholee #bholeeyoga</p>
       <div className="gallery-grid">
         {loading ? (
           <div>Loading...</div>

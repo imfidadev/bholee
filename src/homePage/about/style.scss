@@ -6,9 +6,10 @@
   padding-inline: 20px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 30px;
   @media (max-width: 992px) {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   .text-content {
     max-width: 560px;
@@ -42,6 +43,7 @@
   }
   .img-content {
     max-width: 600px;
+    margin-top: 40px;
     width: 100%;
     border-radius: 14px;
     @media (max-width: 992px) {

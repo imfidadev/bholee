@@ -28,7 +28,7 @@ const CardSection = () => {
             to carve out moments of serenity and mindfulness just for YOU.
           </p>
           <p>
-            This year you are invited to2 mini retreats for an unforgettable
+            This year you are invited to two mini retreats for an unforgettable
             luxury yoga getaway at our breathtaking Luxury Private Beachfront
             Mark Twain Estate at the OBX 4x4 Beaches, where wild horses roam
             freely.
@@ -37,6 +37,12 @@ const CardSection = () => {
           <p>
             <b>Feel free to join one or both retreats.</b>
           </p>
+        </div>
+
+        <div className="event-anchor-links">
+          <a href="#retreatCard">Retreats</a>
+          <a href="#facilitators">Facilitators</a>
+          <a href="#location">Location</a>
         </div>
 
         <div className="cards">

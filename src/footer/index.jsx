@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="container">
         <div className="footer-grid">
           <div className="item">
-            <h4>Contacts</h4>
+            <h4>Contacts Us</h4>
             <p>info@bholeeyoga.com</p>
             {/* <ul className="social-icons">
               <li>

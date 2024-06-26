@@ -107,12 +107,14 @@
               }
             }
             .price {
-              // span {
-                color: #7c5531;
-                font-family: "Lora", serif;
-                font-size: 20px;
-                font-weight: 500;
-              // }
+              color: #7c5531;
+              font-family: "Lora", serif;
+              font-size: 20px;
+              font-weight: 500;
+              .line-through {
+                text-decoration: line-through;
+                font-size: 16px;
+              }
               p {
                 color: #454545;
                 font-family: "Lora", serif;
@@ -122,10 +124,17 @@
             }
           }
           .description {
+            span {
+              font-size: 14px;
+              margin-bottom: 20px;
+              color: #ba936f;
+              font-family: "Montserrat", sans-serif;
+              font-weight: 700;
+            }
             padding-left: 30px;
             font-size: 16px;
             font-family: "Montserrat", sans-serif;
-            font-weight: 700;
+            font-weight: 600;
             margin-top: 14px;
             padding-bottom: 20px;
             color: #555555;

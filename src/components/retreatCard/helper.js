@@ -16,7 +16,7 @@ export const retreatCardInfo = [
     },
     prices: [
       {
-        title: "Shared room + shared bathroom (level 1) 6 rooms, 12 spots",
+        title: "Shared room + shared bathroom 6 rooms",
         description: "(includes all part of the retreat)",
         amounts: [
           {
@@ -26,7 +26,8 @@ export const retreatCardInfo = [
         ],
       },
       {
-        title: "Private room + private bathroom (level 1) 4 rooms, 8 spots",
+        title: "Private room + private bathroom 8 rooms",
+        doubleText: "for both participants",
         description:
           "(includes all part of the retreat + All Meals + 30 minute Photoshoot + Massage session)",
         amounts: [
@@ -41,8 +42,8 @@ export const retreatCardInfo = [
         ],
       },
       {
-        title:
-          "VIP beachfront Private king + private bathroom (level 3) 2 rooms, 4 spots",
+        title: "VIP beachfront Private king + private bathroom 2 rooms",
+        doubleText: "for both participants",
         description:
           "(includes all part of the retreat + All Meals + 30 minute Photoshoot + One on one partner Yoga session with retreat host + One hour massage)",
         amounts: [
@@ -52,21 +53,21 @@ export const retreatCardInfo = [
           },
         ],
       },
-      {
-        title: "Private king + private bathroom (level 3) 4 rooms, 8 spots",
-        description:
-          "(includes all part of the retreat + All Meals + 30 minute Photoshoot + One on one partner Yoga session with retreat host + One hour massage)",
-        amounts: [
-          {
-            title: "Single occupancy",
-            amount: 1850,
-          },
-          {
-            title: "Double occupancy",
-            amount: 3400,
-          },
-        ],
-      },
+      // {
+      //   title: "Private king + private bathroom (level 3) 4 rooms",
+      //   description:
+      //     "(includes all part of the retreat + All Meals + 30 minute Photoshoot + One on one partner Yoga session with retreat host + One hour massage)",
+      //   amounts: [
+      //     {
+      //       title: "Single occupancy",
+      //       amount: 1850,
+      //     },
+      //     {
+      //       title: "Double occupancy",
+      //       amount: 3400,
+      //     },
+      //   ],
+      // },
     ],
   },
   {
@@ -84,7 +85,7 @@ export const retreatCardInfo = [
     },
     prices: [
       {
-        title: "Shared room + shared bathroom (level 1) 6 rooms, 12 spots",
+        title: "Shared room + shared bathroom 6 rooms",
         description: "(includes all part of the retreat)",
         amounts: [
           {
@@ -94,7 +95,8 @@ export const retreatCardInfo = [
         ],
       },
       {
-        title: "Private room + private bathroom (level 1) 4 rooms, 8 spots",
+        title: "Private room + private bathroom 8 rooms",
+        doubleText: "for both participants",
         description:
           "(includes all part of the retreat + All Meals + 30 minute Photoshoot + Massage session)",
         amounts: [
@@ -109,8 +111,8 @@ export const retreatCardInfo = [
         ],
       },
       {
-        title:
-          "VIP beachfront Private king + private bathroom (level 3) 2 rooms, 4 spots",
+        title: "VIP beachfront Private king + private bathroom 2 rooms",
+        doubleText: "for both participants",
         description:
           "(includes all part of the retreat + All Meals + 30 minute Photoshoot + One on one partner Yoga session with retreat host + One hour massage)",
         amounts: [
@@ -120,21 +122,21 @@ export const retreatCardInfo = [
           },
         ],
       },
-      {
-        title: "Private king + private bathroom (level 3) 4 rooms, 8 spots",
-        description:
-          "(includes all part of the retreat + All Meals + 30 minute Photoshoot + One on one partner Yoga session with retreat host + One hour massage)",
-        amounts: [
-          {
-            title: "Single occupancy",
-            amount: 1850,
-          },
-          {
-            title: "Double occupancy",
-            amount: 3400,
-          },
-        ],
-      },
+      // {
+      //   title: "Private king + private bathroom 4 rooms",
+      //   description:
+      //     "(includes all part of the retreat + All Meals + 30 minute Photoshoot + One on one partner Yoga session with retreat host + One hour massage)",
+      //   amounts: [
+      //     {
+      //       title: "Single occupancy",
+      //       amount: 1850,
+      //     },
+      //     {
+      //       title: "Double occupancy",
+      //       amount: 3400,
+      //     },
+      //   ],
+      // },
     ],
   },
 ];

@@ -3,6 +3,7 @@ import Checkout from "../payment/stripeCheckout";
 import { bookingMail } from "../../api/actions";
 import { toast } from "react-toastify";
 import { parseError } from "../../utils";
+import { countryList } from "../../constants/countries";
 
 const PaymentFormSteps = ({ isOpen, selected }) => {
   const [loading, setLoading] = useState(false);
@@ -205,7 +206,6 @@ const PaymentFormSteps = ({ isOpen, selected }) => {
                 <label className="marginTop" htmlFor="address">
                   Enter your address
                 </label>
-
                 <input
                   type="text"
                   placeholder="Address"
@@ -213,6 +213,13 @@ const PaymentFormSteps = ({ isOpen, selected }) => {
                   value={data.address}
                   onChange={(e) => onChange("address", e.currentTarget.value)}
                 />
+                <select id="country">
+                  {countryList.map((country, index) => (
+                    <option key={index} value={country.value}>
+                      {country.label}
+                    </option>
+                  ))}
+                </select>
 
                 <div className="form-group-wrapper">
                   <input

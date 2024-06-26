@@ -69,7 +69,7 @@
       gap: 24px;
       padding-left: 50px;
       width: fit-content;
-      cursor: pointer;
+      // cursor: pointer;
       @media (max-width: 768px) {
         display: none;
       }
@@ -209,9 +209,6 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  &.confirm-payment {
-    // max-width: 280px;
-  }
   h3 {
     font-family: "Lora", serif;
     font-size: 25px;
@@ -341,7 +338,8 @@
           margin-top: 20px;
         }
       }
-      input {
+      input,
+      select {
         width: 100%;
         background-color: #fff;
         border: 1px solid #e0e0e0;
@@ -369,6 +367,9 @@
           font-style: italic;
           color: rgba(206, 206, 206, 1);
         }
+      }
+      select {
+        width: auto;
       }
       button {
         all: unset;
