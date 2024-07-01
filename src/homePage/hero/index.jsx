@@ -1,13 +1,16 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
-  heroArrow,
   heroCircle,
-  heroImg,
   heroLogo,
+  homeHero1,
   homeHero2,
   homeHero3,
   homeHero4,
+  homeHeroMbl1,
+  homeHeroMbl2,
+  homeHeroMbl3,
+  homeHeroMbl4,
 } from "../../assets/images/images";
 import { Autoplay, EffectFade } from "swiper/modules";
 import "./style.scss";
@@ -23,22 +26,27 @@ const HomeHero = () => {
           effect={"fade"}
           modules={[Autoplay, EffectFade]}
           speed={500}
+          // autoplay={false}
           autoplay={{
             delay: 3000,
             disableOnInteraction: false,
           }}
         >
           <SwiperSlide>
-            <img src={heroImg} alt="" />
+            <img className="web" src={homeHero1} alt="" />
+            <img className="mbl" src={homeHeroMbl1} alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={homeHero4} alt="" />
+            <img className="web" src={homeHero4} alt="" />
+            <img className="mbl" src={homeHeroMbl2} alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={homeHero3} alt="" />
+            <img className="web" src={homeHero3} alt="" />
+            <img className="mbl" src={homeHeroMbl3} alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={homeHero2} alt="" />
+            <img className="web" src={homeHero2} alt="" />
+            <img className="mbl" src={homeHeroMbl4} alt="" />
           </SwiperSlide>
         </Swiper>
       </div>

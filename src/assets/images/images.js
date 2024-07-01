@@ -1,8 +1,16 @@
 import logo from "./logo.svg";
-import heroImg from "./heroImg.jpg";
-import homeHero2 from "./homeHero2.jpg";
-import homeHero3 from "./homeHero3.jpg";
-import homeHero4 from "./homeHero4.jpg";
+import homeHero1 from "./homeHeroSlider/homeHero1.jpg";
+import homeHero2 from "./homeHeroSlider/homeHero2.jpg";
+import homeHero3 from "./homeHeroSlider/homeHero3.jpg";
+import homeHero4 from "./homeHeroSlider/homeHero4.jpg";
+import homeHeroMbl1 from "./homeHeroSlider/homeHeroMbl1.jpg";
+import homeHeroMbl2 from "./homeHeroSlider/homeHeroMbl2.jpg";
+import homeHeroMbl3 from "./homeHeroSlider/homeHeroMbl3.jpg";
+import homeHeroMbl4 from "./homeHeroSlider/homeHeroMbl4.jpg";
+import imgSlider1 from "./imgSlider/imgSlider1.jpg";
+import imgSlider2 from "./imgSlider/imgSlider2.jpg";
+import imgSlider3 from "./imgSlider/imgSlider3.jpg";
+import imgSlider4 from "./imgSlider/imgSlider4.jpg";
 import heroImg2 from "./heroImg2.jpg";
 import heroImg3 from "./heroImg3.jpg";
 import heroImg4 from "./heroImg4.jpg";
@@ -58,6 +66,14 @@ import eventSlider20 from "./eventPageSlider/eventSlider20-min.jpg";
 import eventSlider21 from "./eventPageSlider/eventSlider21-min.jpg";
 
 export {
+  imgSlider1,
+  imgSlider2,
+  imgSlider3,
+  imgSlider4,
+  homeHeroMbl1,
+  homeHeroMbl2,
+  homeHeroMbl3,
+  homeHeroMbl4,
   eventSlider2,
   eventSlider3,
   eventSlider4,
@@ -97,7 +113,7 @@ export {
   telegram,
   logo,
   bgLogo,
-  heroImg,
+  homeHero1,
   heroImg2,
   heroImg3,
   heroImg4,

@@ -17,11 +17,11 @@ export const retreatCardInfo = [
     prices: [
       {
         title: "Shared room + shared bathroom 6 rooms",
-        description: "(includes all part of the retreat)",
+        description: "(includes all part of the retreat + all meals)",
         amounts: [
           {
             title: "Single occupancy",
-            amount: 1450,
+            amount: 1200,
           },
         ],
       },
@@ -33,11 +33,11 @@ export const retreatCardInfo = [
         amounts: [
           {
             title: "Single occupancy",
-            amount: 1450,
+            amount: 1400,
           },
           {
             title: "Double occupancy",
-            amount: 3400,
+            amount: 2650,
           },
         ],
       },
@@ -49,7 +49,7 @@ export const retreatCardInfo = [
         amounts: [
           {
             title: "Double occupancy",
-            amount: 4300,
+            amount: 3000,
           },
         ],
       },
@@ -86,11 +86,11 @@ export const retreatCardInfo = [
     prices: [
       {
         title: "Shared room + shared bathroom 6 rooms",
-        description: "(includes all part of the retreat)",
+        description: "(includes all part of the retreat + all meals)",
         amounts: [
           {
             title: "Single occupancy",
-            amount: 1450,
+            amount: 1200,
           },
         ],
       },
@@ -102,11 +102,11 @@ export const retreatCardInfo = [
         amounts: [
           {
             title: "Single occupancy",
-            amount: 1450,
+            amount: 1400,
           },
           {
             title: "Double occupancy",
-            amount: 3400,
+            amount: 2650,
           },
         ],
       },
@@ -118,7 +118,7 @@ export const retreatCardInfo = [
         amounts: [
           {
             title: "Double occupancy",
-            amount: 4300,
+            amount: 3000,
           },
         ],
       },

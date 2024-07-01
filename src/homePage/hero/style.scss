@@ -18,6 +18,20 @@
       max-height: 100vh;
       min-height: 100vh;
       object-fit: cover;
+      &.web {
+        display: inherit;
+        object-fit: cover;
+        @media (max-width: 768px) {
+          display: none;
+        }
+      }
+      &.mbl {
+        display: none;
+        object-fit: cover;
+        @media (max-width: 768px) {
+          display: inherit;
+        }
+      }
     }
     &::after {
       content: "";
@@ -25,13 +39,16 @@
       inset: 0;
       width: 100%;
       height: 100%;
+      z-index: 1;
       background: linear-gradient(
         258.12deg,
         rgba(0, 0, 0, 0) 62.29%,
         rgba(0, 0, 0, 0.59) 71.91%,
         #000000 100%
       );
-      z-index: 1;
+      @media (max-width: 768px) {
+        display: none;
+      }
     }
   }
   .hero-content {
