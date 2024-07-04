@@ -64,8 +64,12 @@ import eventSlider18 from "./eventPageSlider/eventSlider18-min.jpg";
 import eventSlider19 from "./eventPageSlider/eventSlider19-min.jpg";
 import eventSlider20 from "./eventPageSlider/eventSlider20-min.jpg";
 import eventSlider21 from "./eventPageSlider/eventSlider21-min.jpg";
+import welcomeImg1 from "./welcome/welcomeImg1.jpg";
+import welcomeImg2 from "./welcome/welcomeImg2.jpg";
 
 export {
+  welcomeImg1,
+  welcomeImg2,
   imgSlider1,
   imgSlider2,
   imgSlider3,

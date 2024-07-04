@@ -1,12 +1,23 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { bgLogo } from "../../assets/images/images";
 import RetreatCard from "../../components/retreatCard";
 import "./style.scss";
+import { useLocation } from "react-router-dom";
 import PaymentModal from "../../components/paymentModal/paymentModal";
 
 const CardSection = () => {
   const [isModalOpen, setModalOpen] = useState(false);
   const [selected, setSelected] = useState(null);
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.getElementById(location.hash.substring(1));
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
 
   const handleSelected = (data) => {
     setSelected(data);
