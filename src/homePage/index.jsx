@@ -11,13 +11,6 @@ import WelcomePopup from "../components/welcomePopup/WelcomePopup";
 
 const HomePage = () => {
   const [showPopup, setShowPopup] = useState(false);
-  useEffect(() => {
-    const hasVisited = localStorage.getItem("hasVisited");
-    if (!hasVisited) {
-      setShowPopup(true);
-      localStorage.setItem("hasVisited", "true");
-    }
-  }, []);
 
   useEffect(() => {
     if (showPopup) {
@@ -25,10 +18,13 @@ const HomePage = () => {
     } else {
       document.body.classList.remove("modal-open");
     }
+    setTimeout(() => {
+      setShowPopup(true);
+    }, 2000);
     return () => {
       document.body.classList.remove("modal-open");
     };
-  }, [showPopup]);
+  }, []);
 
   const handleClosePopup = () => {
     setShowPopup(false);

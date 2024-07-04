@@ -17,12 +17,19 @@
   @media (max-width: 1270px) {
     max-width: 95%;
   }
+  .close-img {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+  }
   .main-div {
     display: flex;
     align-items: center;
     gap: 50px;
     @media (max-width: 992px) {
       flex-direction: column;
+      padding-top: 20px;
     }
     .left {
       max-width: 600px;

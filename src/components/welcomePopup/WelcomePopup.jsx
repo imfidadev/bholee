@@ -1,11 +1,12 @@
 import React from "react";
 import "./style.scss";
-import { welcomeImg1, welcomeImg2 } from "../../assets/images/images";
+import { close, welcomeImg1, welcomeImg2 } from "../../assets/images/images";
 import { Link } from "react-router-dom";
 
 const WelcomePopup = ({ onClose }) => {
   return (
     <dialog open className="welcome-popup">
+      <img onClick={onClose} src={close} alt="colse" className="close-img" />
       <div className="main-div">
         <div className="left">
           <div className="upper">
