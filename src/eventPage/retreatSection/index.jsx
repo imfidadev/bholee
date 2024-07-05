@@ -5,7 +5,7 @@ import "./style.scss";
 const RetreatSection = () => {
   return (
     <>
-      <section className="retreat-section" id="facilitators">
+      <section className="retreat-section">
         <div className="img-section">
           <img src={retreatImg1} alt="img" />
           <div className="info">

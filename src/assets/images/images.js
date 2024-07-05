@@ -67,9 +67,20 @@ import eventSlider21 from "./eventPageSlider/eventSlider21-min.jpg";
 import welcomeImg1 from "./welcome/welcomeImg1.jpg";
 import welcomeImg2 from "./welcome/welcomeImg2.jpg";
 import close from "./welcome/close.svg";
-
+import mahrukh from "./facilitator/mahrukh.jpg";
+import huda from "./facilitator/huda.jpg";
+import dallin from "./facilitator/dallin.jpg";
+import melissa from "./facilitator/melissa.jpg";
+import talai from "./facilitator/talai.jpg";
+import tannaz from "./facilitator/tannaz.jpg";
 
 export {
+  mahrukh,
+  huda,
+  dallin,
+  melissa,
+  talai,
+  tannaz,
   close,
   welcomeImg1,
   welcomeImg2,

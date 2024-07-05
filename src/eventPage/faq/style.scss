@@ -1,0 +1,92 @@
+.faq {
+  max-width: 1168px;
+  width: 100%;
+  margin-inline: auto;
+  padding-block: 100px;
+  padding-inline: 20px;
+  @media (max-width: 768px) {
+    padding-block: 50px;
+  }
+  h2 {
+    font-family: "Lora", serif;
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 57.6px;
+    text-align: center;
+    color: #ba936f;
+    width: 100%;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+    @media (max-width: 768px) {
+      margin-bottom: 50px;
+      font-size: 36px;
+      line-height: 45.6px;
+    }
+  }
+  .accordion {
+    border: 0;
+  }
+  .accordion__item {
+    margin-bottom: 15px;
+    background: #fdefe6;
+  }
+  .accordion__button {
+    background-color: transparent;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    color: #7c5531;
+    position: relative;
+    padding-right: 50px;
+    &::before {
+      position: absolute;
+      right: 10px;
+    }
+  }
+  .accordion__panel {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #343434;
+    padding-top: 0;
+    .list-item {
+      position: relative;
+      margin-left: 15px;
+      &:before {
+        content: "";
+        position: absolute;
+        left: -15px;
+        background-color: #343434;
+        border-radius: 50%;
+        height: 4px;
+        width: 4px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+  .accordion__item + .accordion__item {
+    border: 0;
+  }
+  .scenario {
+    h3 {
+      font-weight: 700;
+      margin-top: 20px;
+      font-size: 14px;
+      line-height: 21px;
+      color: #343434;
+      font-family: "Montserrat", sans-serif;
+    }
+    span {
+      font-weight: 400;
+      display: inline-block;
+      margin-bottom: 20px;
+      font-size: 14px;
+      line-height: 21px;
+      color: #343434;
+      font-family: "Montserrat", sans-serif;
+    }
+  }
+}
