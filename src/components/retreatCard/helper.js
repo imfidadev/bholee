@@ -21,8 +21,7 @@ export const retreatCardInfo = [
         amounts: [
           {
             title: "Single occupancy",
-            // amount: 1200,
-            amount: 1,
+            amount: 1200,
           },
         ],
       },
