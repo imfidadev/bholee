@@ -36,7 +36,7 @@ const CheckoutForm = ({
       return;
     }
 
-    createPaymentIntent({ currency, amount })
+    createPaymentIntent({ currency, amount, receipt_email: user.email })
       .then(async (response) => {
         const { cardTitle, cardDesc, price } = packageDetails;
         const packageData = {
