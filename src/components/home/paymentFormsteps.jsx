@@ -17,6 +17,7 @@ const PaymentFormSteps = ({ isOpen, selected }) => {
     companyName: "",
     phone: "",
     address: "",
+    country: "United States",
     city: "",
     postalCode: "",
   });
@@ -38,6 +39,7 @@ const PaymentFormSteps = ({ isOpen, selected }) => {
       companyName: "",
       phone: "",
       address: "",
+      country: "United States",
       city: "",
       postalCode: "",
     });
@@ -206,6 +208,7 @@ const PaymentFormSteps = ({ isOpen, selected }) => {
                 <label className="marginTop" htmlFor="address">
                   Enter your address
                 </label>
+
                 <input
                   type="text"
                   placeholder="Address"
@@ -213,9 +216,13 @@ const PaymentFormSteps = ({ isOpen, selected }) => {
                   value={data.address}
                   onChange={(e) => onChange("address", e.currentTarget.value)}
                 />
-                <select id="country">
+
+                <select
+                  value={data.country}
+                  onChange={(e) => onChange("country", e.currentTarget.value)}
+                >
                   {countryList.map((country, index) => (
-                    <option key={index} value={country.value}>
+                    <option key={index} value={country.label}>
                       {country.label}
                     </option>
                   ))}
