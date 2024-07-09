@@ -27,6 +27,7 @@ code {
 }
 
 .thank-you {
+  padding-top:100px;
   text-align: center;
   width: 100%;
   display: flex;
