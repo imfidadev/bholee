@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="footer-grid">
           <div className="item">
             <h4>Contacts Us</h4>
-            <p>info@bholeeyoga.com</p>
+            <a href="mailto:mao@bholee.com ">mao@bholee.com </a>
             {/* <ul className="social-icons">
               <li>
                 <a
