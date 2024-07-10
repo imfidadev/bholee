@@ -36,14 +36,23 @@ const CheckoutForm = ({
       return;
     }
 
-    createPaymentIntent({ currency, amount, receipt_email: user.email })
-      .then(async (response) => {
-        const { cardTitle, cardDesc, price } = packageDetails;
-        const packageData = {
-          plan_title: cardTitle,
-          plan_desc: cardDesc,
-        };
+    const { cardTitle, cardDesc, price } = packageDetails;
+    const metadata = {
+      ...user,
+      ...price,
+      plan_title: cardTitle,
+      plan_desc: cardDesc,
+      amount: price.priceDetail.price,
+    };
+    delete metadata.priceDetail;
 
+    createPaymentIntent({
+      currency,
+      amount,
+      receipt_email: user.email,
+      metadata,
+    })
+      .then(async (response) => {
         const { error, paymentIntent } = await stripe.confirmPayment({
           elements,
           clientSecret: response.data.clientSecret,
@@ -51,11 +60,7 @@ const CheckoutForm = ({
           confirmParams: {
             return_url: `${
               configs.appURL
-            }/checkout/success?user=${JSON.stringify(
-              user
-            )}&package=${JSON.stringify(packageData)}&price=${JSON.stringify(
-              price
-            )}`,
+            }/checkout/success?metadata=${JSON.stringify(metadata)}`,
           },
         });
 

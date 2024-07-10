@@ -8,34 +8,22 @@ import { toast } from "react-toastify";
 const PaymentSuccess = () => {
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
-  const user = searchParams.get("user")
-    ? JSON.parse(searchParams.get("user"))
-    : null;
   const paymentId = searchParams.get("payment_intent");
-  const packageDetails = searchParams.get("package")
-    ? JSON.parse(searchParams.get("package"))
+
+  const metadata = searchParams.get("metadata")
+    ? JSON.parse(searchParams.get("metadata"))
     : null;
 
-  const price = searchParams.get("price")
-    ? JSON.parse(searchParams.get("price"))
-    : null;
-
-  if (!user || !paymentId || !packageDetails || !price) navigate("/events");
+  if (!paymentId || !metadata) navigate("/events");
 
   const [loading, setLoading] = useState(false);
 
   const sendMail = () => {
     setLoading(true);
-    const payload = {
-      ...user,
+    bookingMail({
+      ...metadata,
       paymentId,
-      ...packageDetails,
-      ...price,
-      amount: price.priceDetail.price,
-    };
-
-    delete payload.priceDetail;
-    bookingMail(payload)
+    })
       .then(() => {
         setLoading(false);
       })
