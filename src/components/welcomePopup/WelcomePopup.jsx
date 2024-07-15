@@ -14,9 +14,9 @@ const WelcomePopup = ({ onClose }) => {
               <img src={welcomeImg1} alt="img" />
             </div>
             <div className="info">
-              <h2>Retreat - 1</h2>
+              {/* <h2>Retreat - 1</h2> */}
+              <h2>A Journey Inward.</h2>
               <h4>Sept 22-25</h4>
-              <h4>A Journey Inward.</h4>
             </div>
           </div>
           <div className="upper">
@@ -24,9 +24,9 @@ const WelcomePopup = ({ onClose }) => {
               <img src={welcomeImg2} alt="img" />
             </div>
             <div className="info">
-              <h2>Retreat - 2</h2>
+              {/* <h2>Retreat - 2</h2> */}
+              <h2>The Body Holiday</h2>
               <h4>Sept 25-28</h4>
-              <h4>The Body Holiday</h4>
             </div>
           </div>
         </div>
