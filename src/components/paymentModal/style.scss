@@ -43,6 +43,10 @@
   transition: transform 5s ease, opacity 5s ease;
   overflow-y: auto;
   border-radius: 0;
+  @media (max-width: 768px) {
+    width: 95%;
+    padding: 16px;
+  }
 }
 
 .modal-content.open {

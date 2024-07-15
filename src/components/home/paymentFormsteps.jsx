@@ -123,11 +123,11 @@ const PaymentFormSteps = ({ isOpen, selected }) => {
             <div className="form-group">
               <div className="payment-card confirm-payment">
                 <h3>{selected.cardTitle}</h3>
-                <p>{selected.price.detail.title}</p>
+                <h5>{selected.price.detail.title}</h5>
                 <h4>${selected.price.priceDetail.price}</h4>
 
                 {selected.price.type === "Double occupancy" && (
-                  <p>For both participants</p>
+                  <span>For both participants</span>
                 )}
 
                 <p>{selected.price.detail.description}</p>

@@ -226,6 +226,40 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  &.confirm-payment {
+    min-height: auto;
+    gap: 10px;
+    h5 {
+      font-family: "Montserrat", sans-serif;
+      min-height: auto;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 26px;
+      text-align: center;
+      color: #888888;
+      max-width: 400px;
+      width: 100%;
+    }
+    p {
+      min-height: auto;
+      font-family: "Plus Jakarta Sans", sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      text-align: center;
+      line-height: 22px;
+      color: #343434;
+      max-width: 500px;
+      width: 100%;
+    }
+    span {
+      text-align: left;
+      font-family: "Plus Jakarta Sans", sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: #ba936f;
+      margin-bottom: 16px;
+    }
+  }
   h3 {
     font-family: "Lora", serif;
     font-size: 25px;
