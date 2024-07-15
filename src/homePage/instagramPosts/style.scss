@@ -31,8 +31,45 @@
     color: #ba936f;
   }
   .gallery-grid {
-    img {
-      width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 3px;
+    @media (max-width: 992px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media (max-width: 992px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media (max-width: 600px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 480px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    a {
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 400;
+      img {
+        max-height: 400px;
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+      }
+      p {
+        font-family: "Montserrat", sans-serif;
+        color: #343434;
+        padding-right: 25px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        /* Optional: add some styling */
+        line-height: 1.5; /* Adjust based on your font-size */
+        max-height: 400px;
+        margin-bottom: 20px;
+      }
     }
   }
 }
