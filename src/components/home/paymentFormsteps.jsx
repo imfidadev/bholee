@@ -123,9 +123,21 @@ const PaymentFormSteps = ({ isOpen, selected }) => {
             <div className="form-group">
               <div className="payment-card confirm-payment">
                 <h3>{selected.cardTitle}</h3>
-                <h5>{selected.cardDesc}</h5>
-                <h3>{selected.price.type}</h3>
-                <p>{selected.price.title}</p>
+                <p>{selected.price.detail.title}</p>
+                <h4>${selected.price.priceDetail.price}</h4>
+
+                {selected.price.type === "Double occupancy" && (
+                  <p>For both participants</p>
+                )}
+
+                <p>{selected.price.detail.description}</p>
+
+                {selected.price.detail.info && (
+                  <p>{selected.price.detail.info}</p>
+                )}
+
+                {/* <h5>{selected.cardDesc}</h5> */}
+                {/* <h3>{selected.price.type}</h3> */}
 
                 {/* <h4
                   className={
@@ -134,13 +146,6 @@ const PaymentFormSteps = ({ isOpen, selected }) => {
                 >
                   ${selected.price.amount}
                 </h4> */}
-
-                {selected.price.priceDetail.isDiscount && (
-                  <>
-                    <h4>${selected.price.priceDetail.price}</h4>
-                    <h5>{selected.price.priceDetail.till}</h5>
-                  </>
-                )}
               </div>
               <button onClick={handleNext}>Next</button>
             </div>

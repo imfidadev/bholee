@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./style.scss";
-import { instagramImgs } from "../../assets/images/images";
+// import { instagramImgs } from "../../assets/images/images";
 import { getPosts } from "../../api/actions";
 import { toast } from "react-toastify";
 import { parseError } from "../../utils";
@@ -12,12 +12,13 @@ const InstagramPosts = () => {
   const getInstagramPosts = () => {
     setLoading(true);
     getPosts()
-      .then(() => {
+      .then((res) => {
         setLoading(false);
+        setPosts(res.data);
       })
       .catch((error) => {
         setLoading(false);
-        // toast.error(parseError(error));
+        toast.error(parseError(error));
       });
   };
 
@@ -39,10 +40,16 @@ const InstagramPosts = () => {
           <div>Loading...</div>
         ) : (
           <>
-            {/* {posts.map((item, key) => (
-              <img key={key} src={item.image} alt="images" />
-            ))} */}
-            <img src={instagramImgs} alt="images" />
+            {posts.map((item, key) => (
+              <a href={item.permalink} key={key} target="_blank">
+                {item.media_type === "VIDEO" || item.media_type === "IMAGE" ? (
+                  <img src={item.thumbnail_url} alt="images" />
+                ) : (
+                  <p>{item.caption}</p>
+                )}
+              </a>
+            ))}
+            {/* <img src={instagramImgs} alt="images" /> */}
           </>
         )}
       </div>

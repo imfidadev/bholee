@@ -102,7 +102,12 @@ const CardSection = () => {
             and lifted to a higher vibration.
           </p>
 
-          <p><b>This retreat is intended for you to do as much or as little as your heart and body desires.</b></p>
+          <p>
+            <b>
+              This retreat is intended for you to do as much or as little as
+              your heart and body desires.
+            </b>
+          </p>
         </div>
         {/* <p className="dark-color">
           Join us on this transformative odyssey as we journey inward, finding

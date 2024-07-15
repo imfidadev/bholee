@@ -19,6 +19,12 @@ export const retreatCardInfo = [
       {
         title: "Shared room + shared bathroom 6 rooms",
         description: "(includes all part of the retreat + all meals)",
+        detail: {
+          title: "Shared Room + Shared Bathroom (Single Occupancy)",
+          description:
+            "Includes all parts of the retreat (Welcome Bags, Yoga, Meditation, Breathwork, Sound Healing, All Meals, Chiropractic Adjustments, Dry Needling/Acupuncture, Community Circles, Workshops, Sound Bath, Cacao Ceremony, Pickup and Drop off from Satellite Parking )",
+          info: "",
+        },
         amounts: [
           {
             title: "Single occupancy",
@@ -31,6 +37,13 @@ export const retreatCardInfo = [
         doubleText: "for both participants",
         description:
           "(includes all part of the retreat + All Meals + 30 minute Photoshoot + Massage session)",
+        detail: {
+          title:
+            "Private King Room + Private Bathroom (Single or Double Occupancy)",
+          description:
+            "Includes all parts of the retreat (Welcome Bags, Yoga, Meditation, Breathwork, Sound Healing, All Meals, Chiropractic Adjustments, Dry Needling/Acupuncture, Community Circles, Workshops, Sound Bath, Cacao Ceremony, Pickup and Drop off from Satellite Parking)",
+          info: "Plus: 30 Minutes Photoshoot, 60 Minute Massage",
+        },
         amounts: [
           {
             title: "Single occupancy",
@@ -47,6 +60,13 @@ export const retreatCardInfo = [
         doubleText: "for both participants",
         description:
           "(includes all part of the retreat + All Meals + 30 minute Photoshoot + One on one partner Yoga session with retreat host + One hour massage)",
+        detail: {
+          title:
+            "VIP Beachfront Private King Room + Private Bathroom (Double Occupancy)",
+          description:
+            "Includes all parts of the retreat (Welcome Bags, Yoga, Meditation, Breathwork, Sound Healing, All Meals, Chiropractic Adjustments, Dry Needling/Acupuncture, Community Circles, Workshops, Sound Bath, Cacao Ceremony, Pickup and Drop off from Satellite Parking)",
+          info: "Plus: 30 Minutes Photoshoot, 60 Minute Massage, 60 Minute One on One Partner/Solo Yoga Session with Retreat Facilitator",
+        },
         amounts: [
           {
             title: "Double occupancy",
@@ -58,6 +78,11 @@ export const retreatCardInfo = [
       //   title: "Private king + private bathroom (level 3) 4 rooms",
       //   description:
       //     "(includes all part of the retreat + All Meals + 30 minute Photoshoot + One on one partner Yoga session with retreat host + One hour massage)",
+      //   detail: {
+      //     title: "",
+      //     description: "",
+      //     info: "",
+      //   },
       //   amounts: [
       //     {
       //       title: "Single occupancy",
@@ -89,6 +114,12 @@ export const retreatCardInfo = [
       {
         title: "Shared room + shared bathroom 6 rooms",
         description: "(includes all part of the retreat + all meals)",
+        detail: {
+          title: "Shared Room + Shared Bathroom (Single Occupancy)",
+          description:
+            "Includes all parts of the retreat (Welcome Bags, Yoga, Meditation, Breathwork, Sound Healing, All Meals, Chiropractic Adjustments, Dry Needling/Acupuncture, Community Circles, Workshops, Sound Bath, Cacao Ceremony, Pickup and Drop off from Satellite Parking )",
+          info: "",
+        },
         amounts: [
           {
             title: "Single occupancy",
@@ -101,6 +132,13 @@ export const retreatCardInfo = [
         doubleText: "for both participants",
         description:
           "(includes all part of the retreat + All Meals + 30 minute Photoshoot + Massage session)",
+        detail: {
+          title:
+            "Private King Room + Private Bathroom (Single or Double Occupancy)",
+          description:
+            "Includes all parts of the retreat (Welcome Bags, Yoga, Meditation, Breathwork, Sound Healing, All Meals, Chiropractic Adjustments, Dry Needling/Acupuncture, Community Circles, Workshops, Sound Bath, Cacao Ceremony, Pickup and Drop off from Satellite Parking)",
+          info: "Plus: 30 Minutes Photoshoot, 60 Minute Massage",
+        },
         amounts: [
           {
             title: "Single occupancy",
@@ -117,6 +155,13 @@ export const retreatCardInfo = [
         doubleText: "for both participants",
         description:
           "(includes all part of the retreat + All Meals + 30 minute Photoshoot + One on one partner Yoga session with retreat host + One hour massage)",
+        detail: {
+          title:
+            "VIP Beachfront Private King Room + Private Bathroom (Double Occupancy)",
+          description:
+            "Includes all parts of the retreat (Welcome Bags, Yoga, Meditation, Breathwork, Sound Healing, All Meals, Chiropractic Adjustments, Dry Needling/Acupuncture, Community Circles, Workshops, Sound Bath, Cacao Ceremony, Pickup and Drop off from Satellite Parking)",
+          info: "Plus: 30 Minutes Photoshoot, 60 Minute Massage, 60 Minute One on One Partner/Solo Yoga Session with Retreat Facilitator",
+        },
         amounts: [
           {
             title: "Double occupancy",

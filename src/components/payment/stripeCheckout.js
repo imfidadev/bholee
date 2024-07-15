@@ -44,6 +44,7 @@ const CheckoutForm = ({
       plan_desc: cardDesc,
       amount: price.priceDetail.price,
     };
+    delete metadata.detail;
     delete metadata.priceDetail;
 
     createPaymentIntent({
