@@ -19,9 +19,12 @@ const CardElement = ({ item, index, handleSelected }) => {
 
         <p className="card-desc">{item.cardDesc}</p>
 
-        <span className="info" onClick={() => setIsShowMoreFirstCard(true)}>
+        <a className="info" href={`#${item.hashId}`}>
           More information
-        </span>
+        </a>
+        {/* <span  onClick={() => setIsShowMoreFirstCard(true)}>
+          
+        </span> */}
         {/* <span
             onClick={() => setIsShowMoreFirstCard(!isShowMoreFirstCard)}
           >{`${isShowMoreFirstCard ? "See Less" : "See More"}`}</span> */}

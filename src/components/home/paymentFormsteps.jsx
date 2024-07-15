@@ -127,13 +127,13 @@ const PaymentFormSteps = ({ isOpen, selected }) => {
                 <h3>{selected.price.type}</h3>
                 <p>{selected.price.title}</p>
 
-                <h4
+                {/* <h4
                   className={
                     selected.price.priceDetail.isDiscount ? "line-through" : ""
                   }
                 >
                   ${selected.price.amount}
-                </h4>
+                </h4> */}
 
                 {selected.price.priceDetail.isDiscount && (
                   <>

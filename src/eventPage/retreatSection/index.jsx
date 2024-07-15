@@ -23,7 +23,7 @@ const RetreatSection = () => {
             <p>A holistic journey to harmonize your mind, body, and soul </p>
           </div>
         </div>
-        <div className="retreat-text-section">
+        <div className="retreat-text-section" id="journeyInward">
           <h3>A holistic journey to harmonize your mind, body, and soul </h3>
           <p>
             Discovering inner harmony is a journey- a sacred pilgrimage through
@@ -103,10 +103,9 @@ const RetreatSection = () => {
                 the beach.
               </p>
               <p>
-                <b>Breakfast includes:</b>
-                <br /> Fresh fruit/berries, toast, variety of granolas and
-                cereals and fresh squeezed juice, eggs, bread, smoothies, oats,
-                chia pudding and a lot of other options.
+                <b>Breakfast includes:</b> Fresh fruit/berries, toast, variety
+                of granolas and cereals and fresh squeezed juice, eggs, bread,
+                smoothies, oats, chia pudding and a lot of other options.
               </p>
               <p>
                 <b>Coffee/Teas/Juices and snacks available all day. </b>
@@ -126,7 +125,7 @@ const RetreatSection = () => {
             <p>Sacred Rest and Reset for your mind, body, and soul.</p>
           </div>
         </div>
-        <div className="retreat-text-section">
+        <div className="retreat-text-section" id="bodyHoliday">
           <h3>Sacred Rest and Reset Yoga and Meditation Retreat</h3>
           <p>
             Feeling drained and cut off from your life force? In the whirlwind
@@ -138,29 +137,10 @@ const RetreatSection = () => {
           </p>
 
           <p>
-            This luxurious four-day, three-night experience offers you present
-            moment consciousness practices, nature immersion, and tangible
-            mind-body techniques. You will learn tools to quiet the mind clutter
-            that blocks awareness in daily life, allowing you to feel your
-            energy flow more freely.
-          </p>
-
-          <p>
-            Embark on a journey to ignite your inner light through holistic
-            wellness practices of power up and power yoga sessions, guided
-            meditations, yoga nidra, deep stretching promoting relaxation and
-            healing. The Body Holiday includes immersive experiences like
-            acupuncture, massage, breathwork, soul-nourishing organic meals
-            designed to heal from the inside out, sound healing, aroma therapy
-            and music to soothe and uplift your spirit.
-          </p>
-
-          <p>
-            In the in between moments amidst the tranquil embrace of nature
-            experience the wild horses of Corolla, enjoy the pool, hot tub, game
-            room, adventure into the natural gifts of the sea, immerse yourself
-            in some peace and quiet on the beach with serene sunrises. Reconnect
-            with yourself to abide in your inner light
+            Embark on an immersive journey to ignite your inner light through
+            holistic wellness practices to quiet the mind clutter that blocks
+            awareness in daily life, allowing you to feel your energy flow more
+            freely.
           </p>
         </div>
       </section>
@@ -189,9 +169,9 @@ const RetreatSection = () => {
                 Circle (gratitude, journaling prompts, reflection)
               </p>
               <p>
-                <b>10:00am-12pm:</b> Workshops (Hip and Shoulder Mobility
-                leading to arm balances and advanced asanas, Breathwork
-                Workshop, Somatic Work, Ecstatic Dance and Cacao Ceremony)
+                <b>10:00am-12pm:</b> Workshops (Cultivation of Self Love, Deep
+                Stretch for physical and emotional release, Tapping and
+                Lymphatic Drainage, Mindfulness Meditation with  Cacao Ceremony)
               </p>
               <p>
                 <b>1:00-4:00 pm:</b> Lunch & Free Time. Enjoy delicious meals,
@@ -213,8 +193,8 @@ const RetreatSection = () => {
                 night)
               </p>
               <p>
-                <b>9:00 pm:</b> Yin Yoga, Yoga Nidra, Sound Bath under the stars
-                (weather depending)
+                <b>9:00 pm:</b> Yin Yoga, Yoga Nidra, Chakra Cleansing, Sound
+                Bath under the stars (weather depending)
               </p>
               <p>
                 <b>During the free time schedule your massage:</b>
@@ -225,10 +205,9 @@ const RetreatSection = () => {
                 the beach.
               </p>
               <p>
-                <b>Breakfast includes:</b>
-                <br /> Fresh fruit/berries, toast, variety of granolas and
-                cereals and fresh squeezed juice, eggs, bread, smoothies, oats,
-                chia pudding and a lot of other options.
+                <b>Breakfast includes:</b> Fresh fruit/berries, toast, variety
+                of granolas and cereals and fresh squeezed juice, eggs, bread,
+                smoothies, oats, chia pudding and a lot of other options.
               </p>
               <p>
                 <b>Coffee/Teas/Juices and snacks available all day. </b>

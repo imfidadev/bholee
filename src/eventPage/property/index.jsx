@@ -41,13 +41,13 @@ const EventProperty = () => {
   return (
     <section className="event-property">
       <h2>our property</h2>
-      <p>
+      {/* <p>
         Located near the Currituck National Wildlife Refuge, just south of the
         Virginia border, our 4x4home gives you access to the wild side of the
         Outer Banks, where wild horses roam free. This is a one of a kind
         experiences where you are likely to see a wild mustang walking freely in
         the area. 
-      </p>
+      </p> */}
       <div className="event-card">
         <div className="event-card-img">
           <Swiper
@@ -129,19 +129,18 @@ const EventProperty = () => {
           </Swiper>
         </div>
         <div className="event-card-info">
-          <h3>
-            the perfect blend of grandeur and classic Outer Banks charm at The
-            Mark Twain, an 18-bedroom beachfront retreat home. Luxurious indoor
-            and outdoor idyllic spaces. 
-          </h3>
+          <h3>The Mark Twain - Grand Ocean Front Pool:</h3>
           <p>
-            This magnificent home has a heated outdoor pool, a relaxing hot tub,
-            gazebo, luxury bedrooms, spacious elevated decks
+            The perfect blend of grandeur and classic Outer Banks charm at The
+            Mark Twain, an 18-bedroom beachfront retreat home. Luxurious indoor
+            and outdoor idyllic spaces
           </p>
           <p>
-            overlooking the ocean, Game room for a little entertainment between
-            activities with pool table, foosball table and plenty of places to
-            enjoy sunrises on the ocean, sunsets on the sound, 
+            This magnificent home has a heated outdoor pool, a relaxing hot tub,
+            gazebo, luxury bedrooms, spacious elevated decks overlooking the
+            ocean, Game room for a little entertainment between activities with
+            pool table, foosball table and plenty of places to enjoy sunrises on
+            the ocean, sunsets on the sound.
           </p>
           <div className="card-bottom">
             <button onClick={() => scrollToSection("retreatCard")}>

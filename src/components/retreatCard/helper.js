@@ -8,6 +8,7 @@ export const retreatCardInfo = [
     cardImg: retreatCardImg1,
     checkIn: "Sept 22, 2024 @ 4pm",
     checkOut: "Sept 25, 2024 @ 12pm",
+    hashId: "journeyInward",
     discount: {
       active: true,
       percentage: 15,
@@ -77,6 +78,7 @@ export const retreatCardInfo = [
     cardImg: retreatCardImg2,
     checkIn: "Sept 25, 2024 @ 4pm",
     checkOut: "Sept 28, 2024 @ 12pm",
+    hashId: "bodyHoliday",
     discount: {
       active: true,
       percentage: 15,
