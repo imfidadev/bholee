@@ -29,32 +29,52 @@ const CardSection = () => {
     <>
       <section className="card-section">
         <div className="gallery-text">
-          <div className="bg-logo">
+          {/* <div className="bg-logo">
             <img src={bgLogo} alt="bg-logo" />
-          </div>
+          </div> */}
           <p>
-            Welcome to Bholee Yoga Retreats, where we invite you to embark on a
-            transformative journey towards inner harmony, rejuvenation, and
-            self-discovery. In the midst of our fast-paced lives, it's essential
-            to carve out moments of serenity and mindfulness just for YOU.
+            <b>Welcome to Bholee Yoga Retreats!</b>
           </p>
           <p>
-            This year you are invited to two mini retreats for an unforgettable
-            luxury yoga getaway at our breathtaking Luxury Private Beachfront
-            Mark Twain Estate at the OBX 4x4 Beaches, where wild horses roam
-            freely.
+            We at Bholee understand that mental, physical and spiritual health
+            are the most important aspects of human growth and being. In our
+            fast-paced world, it's essential to find moments of serenity and
+            mindfulness just for YOU.
           </p>
-
+          <p>
+            Our retreats are an opportunity for you to delve into the sanctuary
+            of your mind, body and soul amidst the tranquil nature to discover
+            YOUR path to inner harmony, cultivate personal growth and
+            self-connection.
+          </p>
+          <p>
+            Each retreat is a getaway for you, whether you are seeking
+            relaxation or growth, Bholee Yoga and Wellness Retreats guide you on
+            a journey that extends far beyond the duration of the retreat to
+            help you return to your life with vitality and resilience.
+          </p>
+          <p>
+            There’s no need to sacrifice luxury to embark on a spiritual
+            journey. This year you are invited to Two Mini Retreats for an
+            unforgettable yoga vacation at our breathtaking Luxury Private
+            Beachfront Mark Twain Estate at the OBX 4x4 Beaches, where wild
+            horses roam free
+          </p>
+          <p>
+            From the lulling sound of the waves to the soothing blue of the
+            ocean to healing salt, the beach does more than just provide a
+            pretty backdrop; it also makes you feel better from the inside out.
+          </p>
           <p>
             <b>Feel free to join one or both retreats.</b>
           </p>
         </div>
 
-        <div className="event-anchor-links">
+        {/* <div className="event-anchor-links">
           <a href="#retreatCard">Retreats</a>
           <a href="#facilitators">Facilitators</a>
           <a href="#location">Location</a>
-        </div>
+        </div> */}
 
         <div className="cards">
           <RetreatCard handleSelected={handleSelected} />
@@ -81,11 +101,13 @@ const CardSection = () => {
             be held and supported by your hosts, fellow retreaters, celebrated
             and lifted to a higher vibration.
           </p>
+
+          <p><b>This retreat is intended for you to do as much or as little as your heart and body desires.</b></p>
         </div>
-        <p className="dark-color">
+        {/* <p className="dark-color">
           Join us on this transformative odyssey as we journey inward, finding
           harmony within the sanctuary of our own souls.
-        </p>
+        </p> */}
       </section>
     </>
   );

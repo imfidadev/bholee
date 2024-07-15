@@ -25,6 +25,16 @@
       line-height: 30px;
       margin-bottom: 14px;
     }
+    .info {
+      font-family: "Montserrat", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      color: #7c5531;
+      cursor: pointer;
+      padding-bottom: 15px;
+      display: inline-block;
+    }
     .card-desc {
       color: #454545;
       font-family: "Montserrat", sans-serif;
@@ -170,14 +180,6 @@
         line-height: 20.72px;
         color: #ffffff;
         padding-block: 10px;
-        cursor: pointer;
-      }
-      span {
-        font-family: "Montserrat", sans-serif;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 24px;
-        color: #454545;
         cursor: pointer;
       }
     }

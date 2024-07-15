@@ -19,6 +19,13 @@ const CardElement = ({ item, index, handleSelected }) => {
 
         <p className="card-desc">{item.cardDesc}</p>
 
+        <span className="info" onClick={() => setIsShowMoreFirstCard(true)}>
+          More information
+        </span>
+        {/* <span
+            onClick={() => setIsShowMoreFirstCard(!isShowMoreFirstCard)}
+          >{`${isShowMoreFirstCard ? "See Less" : "See More"}`}</span> */}
+
         <div
           className={`retreat-accordion ${isShowMoreFirstCard ? "show" : ""}`}
         >
@@ -72,9 +79,6 @@ const CardElement = ({ item, index, handleSelected }) => {
           >
             Book Your Slot
           </button>
-          <span
-            onClick={() => setIsShowMoreFirstCard(!isShowMoreFirstCard)}
-          >{`${isShowMoreFirstCard ? "See Less" : "See More"}`}</span>
         </div>
       </div>
     </div>

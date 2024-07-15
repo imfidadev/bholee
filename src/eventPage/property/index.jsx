@@ -130,15 +130,18 @@ const EventProperty = () => {
         </div>
         <div className="event-card-info">
           <h3>
-            The Mark Twain Grand Ocean Front Home at The Three Authors- Outer
-            Banks, North Carolina
+            the perfect blend of grandeur and classic Outer Banks charm at The
+            Mark Twain, an 18-bedroom beachfront retreat home. Luxurious indoor
+            and outdoor idyllic spaces. 
           </h3>
           <p>
-            Located near the Currituck National Wildlife Refuge, just south of
-            the Virginia border, our 4x4home gives you access to the wild side
-            of the Outer Banks, where wild horses roam free. This is a one of a
-            kind experiences where you are likely to see a wild mustang walking
-            freely in the area. 
+            This magnificent home has a heated outdoor pool, a relaxing hot tub,
+            gazebo, luxury bedrooms, spacious elevated decks
+          </p>
+          <p>
+            overlooking the ocean, Game room for a little entertainment between
+            activities with pool table, foosball table and plenty of places to
+            enjoy sunrises on the ocean, sunsets on the sound, 
           </p>
           <div className="card-bottom">
             <button onClick={() => scrollToSection("retreatCard")}>
@@ -147,7 +150,7 @@ const EventProperty = () => {
           </div>
         </div>
       </div>
-      <div className="event-text">
+      {/* <div className="event-text">
         <h4>The Mark Twain – Grand Ocean Front Home</h4>
         <p>
           Immerse in the perfect blend of grandeur and classic Outer Banks charm
@@ -164,7 +167,7 @@ const EventProperty = () => {
           are several transportation options for you at this 4-wheel drive-only
           property.
         </p>
-      </div>
+      </div> */}
     </section>
   );
 };

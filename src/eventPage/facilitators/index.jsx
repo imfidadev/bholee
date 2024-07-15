@@ -46,13 +46,15 @@ const Facilitators = () => {
             <div className="info">
               <h4>Talai Sera Johansen</h4>
               <p>
-                Talai was originally born in Suva, Fiji. She is a certified
+                Talai was originally born in Suva, Fiji.  She is a certified
                 500-hour yoga instructor and has over 1,000 teaching hours.
               </p>
               <p>
                 She is passionate about teaching yoga and believes that yoga is
-                for everybody, every stage, and every phase of life. She
-                believes that yoga has the ability to teach you to be more
+                for everybody, every stage, and every phase of life.
+              </p>
+              <p>
+                She believes that yoga has the ability to teach you to be more
                 present and awake during any circumstance.
               </p>
               <p>
@@ -75,11 +77,15 @@ const Facilitators = () => {
                 aesthetic enhancement.
               </p>
               <p>
-                She provides a variety of services, including dry needling and
-                spinal adjustments, to address her patients' diverse needs. As a
-                certified yoga teacher, she integrates her knowledge of movement
-                and alignment into her practice, promoting holistic health and
-                wellness.
+                Dr. Mancini provides a variety of services, including dry
+                needling and spinal adjustments, to address her patients'
+                diverse needs. As a certified yoga teacher, she integrates her
+                knowledge of movement and alignment into her practice, promoting
+                holistic health and wellness.
+              </p>
+              <p>
+                Dr. Mancini is committed to delivering personalized care and
+                helping her patients achieve their health goals.
               </p>
             </div>
           </div>
@@ -111,6 +117,28 @@ const Facilitators = () => {
           </h3>
           <div className="card">
             <div className="img">
+              <img src={huda} alt="img" />
+            </div>
+            <div className="info">
+              <h4>Huda Ahmad</h4>
+              <p>
+                Huda Ahmed is our in-house retreat chef with a rich culinary
+                heritage. Huda is from Lahore, the food capital of Pakistan, now
+                residing in California. Lahore instilled in Huda the love for
+                good food, diverse flavors and aromatic spices. Her years spent
+                in Dubai enhanced Huda’s culinary offerings to global cuisines.
+                And her life in the USA further added diversity and creativity
+                in her culinary creations.
+              </p>
+              <p>
+                Huda offers a versatile and flexible menu, her food creations
+                are infused with love and expertise, making every meal a
+                delightful journey for your taste buds.
+              </p>
+            </div>
+          </div>
+          <div className="card">
+            <div className="img">
               <img src={dallin} alt="img" />
             </div>
             <div className="info">
@@ -129,32 +157,13 @@ const Facilitators = () => {
               <p>
                 Through mindfulness practice and therapy, he recognized many of
                 his beliefs and life-goals were causing more stress than
-                happiness.
-              </p>
-            </div>
-          </div>
-          <div className="card">
-            <div className="img">
-              <img src={huda} alt="img" />
-            </div>
-            <div className="info">
-              <h4>Huda Ahmad</h4>
-              <p>
-                Meet Chef Huda Ahmed, our in-house retreat chef with a heritage
-                rooted in the rich culinary traditions of India and Pakistan.
+                happiness. He pivoted all his efforts toward wellness through
+                personal practice, world travel, and specialized education.
               </p>
               <p>
-                Huda offers a diverse and flexible menu that caters to various
-                preferences, blending traditional culinary styles with fusion
-                and modern techniques.
-              </p>
-              <p>
-                Whether crafting a sumptuous feast or a simple, healthful dish,
-                Huda's culinary creations are infused with love and expertise,
-                making every meal a delightful journey for your taste buds. Join
-                us in savoring the exquisite flavors of Chef Huda's cuisine
-                during our retreats, where each bite is a testament to her
-                culinary artistry and dedication.
+                Dallin lives in Vineyard, UT with his partner and three
+                children. Besides his career, he’s passionate about nature, art,
+                and cuisine.
               </p>
             </div>
           </div>
