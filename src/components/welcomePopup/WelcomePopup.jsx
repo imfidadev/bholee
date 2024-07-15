@@ -37,9 +37,9 @@ const WelcomePopup = ({ onClose }) => {
           <h5>Till 31st July</h5>
           <h4>Escape, Reset, Return Home Renewed</h4>
           <p>
-            Join us for an unforgettable, luxurious 5 nights 4 days getaway to
-            the beautiful oceanfront Mark Twain Residence at the OBX 4x4 Beaches
-            with Wild Horses roaming around.
+            Join us for an unforgettable, luxurious getaway to the beautiful
+            oceanfront Mark Twain Residence at the OBX 4x4 Beaches with Wild
+            Horses roaming around.
           </p>
           <Link to="/events/#retreatCard" onClick={onClose}>
             Explore

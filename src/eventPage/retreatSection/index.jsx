@@ -44,7 +44,7 @@ const RetreatSection = () => {
         </div>
       </section>
       <div className="faq retreat-faq">
-        <Accordion>
+        <Accordion allowZeroExpanded>
           <AccordionItem>
             <AccordionItemHeading>
               <AccordionItemButton>
@@ -165,7 +165,7 @@ const RetreatSection = () => {
         </div>
       </section>
       <div className="faq retreat-faq">
-        <Accordion>
+        <Accordion allowZeroExpanded>
           <AccordionItem>
             <AccordionItemHeading>
               <AccordionItemButton>

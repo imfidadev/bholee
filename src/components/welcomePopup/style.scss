@@ -154,9 +154,16 @@
         text-align: center;
         color: #343434;
         margin-bottom: 15px;
+        max-width: 404px;
+        width: 100%;
+        margin-inline: auto;
         @media (max-width: 1270px) {
+          max-width: 404px;
           font-size: 14px;
           line-height: 24.72px;
+        }
+        @media (max-width: 768px) {
+          max-width: 100%;
         }
       }
       a {

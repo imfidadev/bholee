@@ -15,7 +15,7 @@ const Faq = () => {
   return (
     <section className="faq">
       <h2>frequently asked questions</h2>
-      <Accordion allowMultipleExpanded>
+      <Accordion allowMultipleExpanded allowZeroExpanded>
         <AccordionItem>
           <AccordionItemHeading>
             <AccordionItemButton>

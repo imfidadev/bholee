@@ -42,7 +42,12 @@
     &::before {
       position: absolute;
       right: 10px;
+      transform: rotate(45deg);
     }
+  }
+  .accordion__button[aria-expanded="true"]::before,
+  .accordion__button[aria-selected="true"]::before {
+    transform: rotate(-135deg);
   }
   .accordion__panel {
     font-family: "Montserrat", sans-serif;
