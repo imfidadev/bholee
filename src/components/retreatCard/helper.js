@@ -33,7 +33,7 @@ export const retreatCardInfo = [
         ],
       },
       {
-        title: "Private room + private bathroom 8 rooms",
+        title: "Private King Room  + private bathroom 8 rooms",
         doubleText: "for both participants",
         description:
           "(includes all part of the retreat + All Meals + 30 minute Photoshoot + Massage session)",
@@ -128,7 +128,7 @@ export const retreatCardInfo = [
         ],
       },
       {
-        title: "Private room + private bathroom 8 rooms",
+        title: "Private King Room + private bathroom 8 rooms",
         doubleText: "for both participants",
         description:
           "(includes all part of the retreat + All Meals + 30 minute Photoshoot + Massage session)",

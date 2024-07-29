@@ -129,7 +129,7 @@ const EventProperty = () => {
           </Swiper>
         </div>
         <div className="event-card-info">
-          <h3>The Mark Twain - Grand Ocean Front Pool:</h3>
+          <h3>The Mark Twain - Grand Ocean From Home:</h3>
           <p>
             The perfect blend of grandeur and classic Outer Banks charm at The
             Mark Twain, an 18-bedroom beachfront retreat home. Luxurious indoor
@@ -149,24 +149,6 @@ const EventProperty = () => {
           </div>
         </div>
       </div>
-      {/* <div className="event-text">
-        <h4>The Mark Twain – Grand Ocean Front Home</h4>
-        <p>
-          Immerse in the perfect blend of grandeur and classic Outer Banks charm
-          at The Mark Twain, an 18-bedroom beachfront retreat home. Luxurious
-          indoor and outdoor idyllic spaces. It is an extended escape to
-          reconnect, celebrate, and create a symphony of unforgettable memories.
-        </p>
-        <p>
-          This magnificent home has a heated outdoor pool, a relaxing hot tub,
-          gazebo, luxury bedrooms, spacious elevated decks overlooking the
-          ocean, Game room for a little entertainment between activities with
-          pool table, foosball table and plenty of places to enjoy sunrises on
-          the ocean, sunsets on the sound, and the wild horses of Corolla! There
-          are several transportation options for you at this 4-wheel drive-only
-          property.
-        </p>
-      </div> */}
     </section>
   );
 };

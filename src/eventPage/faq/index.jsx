@@ -19,6 +19,69 @@ const Faq = () => {
         <AccordionItem>
           <AccordionItemHeading>
             <AccordionItemButton>
+              What is included in our OBX retreats?
+            </AccordionItemButton>
+          </AccordionItemHeading>
+          <AccordionItemPanel>
+            <span>-Daily Hatha/Restorative Flow Yoga</span>
+            <br />
+            <span>-Daily Guided Meditations</span>
+            <br />
+            <span>-Daily Breathwork</span>
+            <br />
+            <span>
+              -Daily Life/Health & Soul Coaching Workshops that will inspire you
+              long after the retreat. Take home workbook included. 
+            </span>
+            <br />
+            <span>-Cleansing Ocean Swim, White Sandy Beach Time</span>
+            <br />
+            <span>-Sound Energy Healing with Crystal & Tibetan Bowls</span>
+            <br />
+            <span>-Exam and chiropractic adjustment</span>
+            <br />
+            <span>-Dry needling, acupuncture and cupping</span>
+            <br />
+            <span>
+              -Community Circles  (Guided reflection activities, introspective
+              journaling prompts)
+            </span>
+            <br />
+            <span>
+              -All meals and beverages (don't worry, these are all hot, hardy
+              soups, stews, curries, pastas and salads; delicious entrees that
+              will have you coming back for more)
+            </span>
+            <br />
+            <span>
+              -Pick up and drop off from the satellite parking with Off roading
+              experience on the white beachy sand along the ocean
+            </span>
+            <br />
+            <span>-Wifi connection</span>
+            <br />
+            <span>-Heated swimming pool and hot tub</span>
+            <br />
+            <span>-Aromatherapy</span>
+            <br />
+            <span>-Somatic Work and Tapping</span>
+            <br />
+            <span>-Mobility Work</span>
+            <br />
+            <span>-Music</span>
+            <br />
+            <span>-Hands on Adjustments</span>
+            <br />
+            <span>-Closing Ceremony White dress party</span>
+            <br />
+            <span>-Ecstatic Dance</span>
+            <br />
+            <span>-Optional Cacao Ceremony</span>
+          </AccordionItemPanel>
+        </AccordionItem>
+        <AccordionItem>
+          <AccordionItemHeading>
+            <AccordionItemButton>
               What is not included in the package?
             </AccordionItemButton>
           </AccordionItemHeading>
@@ -191,69 +254,6 @@ const Faq = () => {
               Please let us know if whichever option you are choosing to travel
               and we will help you out in every way we can.
             </p>
-          </AccordionItemPanel>
-        </AccordionItem>
-        <AccordionItem>
-          <AccordionItemHeading>
-            <AccordionItemButton>
-              What is included in our OBX retreats?
-            </AccordionItemButton>
-          </AccordionItemHeading>
-          <AccordionItemPanel>
-            <span>-Daily Hatha/Restorative Flow Yoga</span>
-            <br />
-            <span>-Daily Guided Meditations</span>
-            <br />
-            <span>-Daily Breathwork</span>
-            <br />
-            <span>
-              -Daily Life/Health & Soul Coaching Workshops that will inspire you
-              long after the retreat. Take home workbook included. 
-            </span>
-            <br />
-            <span>-Cleansing Ocean Swim, White Sandy Beach Time</span>
-            <br />
-            <span>-Sound Energy Healing with Crystal & Tibetan Bowls</span>
-            <br />
-            <span>-Exam and chiropractic adjustment</span>
-            <br />
-            <span>-Dry needling, acupuncture and cupping</span>
-            <br />
-            <span>
-              -Community Circles  (Guided reflection activities, introspective
-              journaling prompts)
-            </span>
-            <br />
-            <span>
-              -All meals and beverages (don't worry, these are all hot, hardy
-              soups, stews, curries, pastas and salads; delicious entrees that
-              will have you coming back for more)
-            </span>
-            <br />
-            <span>
-              -Pick up and drop off from the satellite parking with Off roading
-              experience on the white beachy sand along the ocean
-            </span>
-            <br />
-            <span>-Wifi connection</span>
-            <br />
-            <span>-Heated swimming pool and hot tub</span>
-            <br />
-            <span>-Aromatherapy</span>
-            <br />
-            <span>-Somatic Work and Tapping</span>
-            <br />
-            <span>-Mobility Work</span>
-            <br />
-            <span>-Music</span>
-            <br />
-            <span>-Hands on Adjustments</span>
-            <br />
-            <span>-Closing Ceremony White dress party</span>
-            <br />
-            <span>-Ecstatic Dance</span>
-            <br />
-            <span>-Optional Cacao Ceremony</span>
           </AccordionItemPanel>
         </AccordionItem>
       </Accordion>

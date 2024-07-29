@@ -1,7 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
-  heroImg,
   heroImg2,
   heroImg3,
   heroImg4,
@@ -47,11 +46,7 @@ const EventHero = () => {
         </Swiper>
       </div>
       <div className="event-hero-content">
-        <h1>
-          Bholee Yoga and Wellness Retreats
-        </h1>
-        {/* <h3>All Inclusive- Hosted by Bholee Yoga</h3>
-        <p>Feel free to join one or both retreats</p> */}
+        <h1>Bholee Yoga and Wellness Retreats</h1>
       </div>
       <div className="hero-logo">
         <img src={heroLogo} alt="hero-logo" />
