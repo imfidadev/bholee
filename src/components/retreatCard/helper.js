@@ -6,8 +6,8 @@ export const retreatCardInfo = [
     cardTitle: "A Journey Inward. Sept 22-25",
     cardDesc: "A Soulful Journey to Inner Harmony Yoga and Meditation Retreat",
     cardImg: retreatCardImg1,
-    checkIn: "Sept 22, 2024 @ 4pm",
-    checkOut: "Sept 25, 2024 @ 12pm",
+    checkIn: "Sept 22, 2024 @ 4pm",
+    checkOut: "Sept 25, 2024 @ 12pm",
     hashId: "journeyInward",
     discount: {
       active: true,
@@ -33,7 +33,7 @@ export const retreatCardInfo = [
         ],
       },
       {
-        title: "Private King Room  + private bathroom 8 rooms",
+        title: "Private King Room  + private bathroom 8 rooms",
         doubleText: "for both participants",
         description:
           "(includes all part of the retreat + All Meals + 30 minute Photoshoot + Massage session)",
@@ -65,7 +65,7 @@ export const retreatCardInfo = [
             "VIP Beachfront Private King Room + Private Bathroom (Double Occupancy)",
           description:
             "Includes all parts of the retreat (Welcome Bags, Yoga, Meditation, Breathwork, Sound Healing, All Meals, Chiropractic Adjustments, Dry Needling/Acupuncture, Community Circles, Workshops, Sound Bath, Cacao Ceremony, Pickup and Drop off from Satellite Parking)",
-          info: "Plus: 30 Minutes Photoshoot, 60 Minute Massage, 60 Minute One on One Partner/Solo Yoga Session with Retreat Facilitator",
+          info: "Plus: 30 Minutes Photoshoot, 60 Minute Massage, 60 Minute One on One Partner/Solo Yoga Session with Retreat Facilitator",
         },
         amounts: [
           {
@@ -101,8 +101,8 @@ export const retreatCardInfo = [
     cardTitle: "The Body Holiday Sept 25-28",
     cardDesc: "Sacred Rest and Reset Yoga and Meditation Retreat",
     cardImg: retreatCardImg2,
-    checkIn: "Sept 25, 2024 @ 4pm",
-    checkOut: "Sept 28, 2024 @ 12pm",
+    checkIn: "Sept 25, 2024 @ 4pm",
+    checkOut: "Sept 28, 2024 @ 12pm",
     hashId: "bodyHoliday",
     discount: {
       active: true,
@@ -128,7 +128,7 @@ export const retreatCardInfo = [
         ],
       },
       {
-        title: "Private King Room + private bathroom 8 rooms",
+        title: "Private King Room + private bathroom 8 rooms",
         doubleText: "for both participants",
         description:
           "(includes all part of the retreat + All Meals + 30 minute Photoshoot + Massage session)",
@@ -160,7 +160,7 @@ export const retreatCardInfo = [
             "VIP Beachfront Private King Room + Private Bathroom (Double Occupancy)",
           description:
             "Includes all parts of the retreat (Welcome Bags, Yoga, Meditation, Breathwork, Sound Healing, All Meals, Chiropractic Adjustments, Dry Needling/Acupuncture, Community Circles, Workshops, Sound Bath, Cacao Ceremony, Pickup and Drop off from Satellite Parking)",
-          info: "Plus: 30 Minutes Photoshoot, 60 Minute Massage, 60 Minute One on One Partner/Solo Yoga Session with Retreat Facilitator",
+          info: "Plus: 30 Minutes Photoshoot, 60 Minute Massage, 60 Minute One on One Partner/Solo Yoga Session with Retreat Facilitator",
         },
         amounts: [
           {
