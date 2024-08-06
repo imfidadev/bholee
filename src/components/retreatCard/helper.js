@@ -11,9 +11,9 @@ export const retreatCardInfo = [
     hashId: "journeyInward",
     discount: {
       active: true,
-      percentage: 15,
+      percentage: 10,
       start: "2024-06-23T00:00:00Z",
-      end: "2024-07-31T23:59:59Z",
+      end: "2024-08-31T23:59:59Z",
     },
     prices: [
       {
@@ -106,9 +106,9 @@ export const retreatCardInfo = [
     hashId: "bodyHoliday",
     discount: {
       active: true,
-      percentage: 15,
+      percentage: 10,
       start: "2024-06-23T00:00:00Z",
-      end: "2024-07-31T23:59:59Z",
+      end: "2024-08-31T23:59:59Z",
     },
     prices: [
       {

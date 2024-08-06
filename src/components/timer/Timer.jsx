@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 const Timer = () => {
   const calculateTimeLeft = () => {
-    const targetDate = new Date('2024-07-31T00:00:00').getTime();
+    const targetDate = new Date('2024-08-31T00:00:00').getTime();
     const now = new Date().getTime();
     const difference = targetDate - now;
 
@@ -32,7 +32,7 @@ const Timer = () => {
 
   return (
     <div>
-      <h1>Countdown to July 31, 2024</h1>
+      <h1>Countdown to August 31, 2024</h1>
       {Object.keys(timeLeft).length ? (
         <div>
           {timeLeft.days}d {timeLeft.hours}h {timeLeft.minutes}m {timeLeft.seconds}s

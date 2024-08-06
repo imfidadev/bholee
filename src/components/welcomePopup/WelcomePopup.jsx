@@ -34,7 +34,7 @@ const WelcomePopup = ({ onClose }) => {
         <div className="right">
           <h3>Avail Early Bird Discount</h3>
           <h2>Bholee Yoga and Wellness Retreats</h2>
-          <h5>Till 31st July</h5>
+          <h5>Till 31st August</h5>
           <h4>Escape, Reset, Return Home Renewed</h4>
           <p>
             Join us for an unforgettable, luxurious getaway to the beautiful
